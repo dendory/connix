@@ -1,0 +1,372 @@
+DEBUG Main 1464618757 - Input modules to process: 1
+DEBUG Main 1464618757 - Output modules to process: 0
+DEBUG Main 1464618757 - Number of parsing rules: 0
+DEBUG Main 1464618757 - Exiting
+ERROR Main 1464619083 - Invalid configuration format for key 'db'
+DEBUG Main 1464619083 - Exiting
+ERROR Main 1464619243 - Invalid configuration for key 'db'
+DEBUG Main 1464619243 - Exiting
+DEBUG Main 1464619261 - Input modules to process: 1
+DEBUG Main 1464619261 - Output modules to process: 0
+DEBUG Main 1464619261 - Number of parsing rules: 0
+INFO Main 1464619261 - Parsing input [1] using module [odbc]
+DEBUG Main 1464619261 - Exiting
+DEBUG Main 1464619739 - Input modules to process: 1
+DEBUG Main 1464619739 - Output modules to process: 0
+DEBUG Main 1464619739 - Number of parsing rules: 0
+INFO Main 1464619739 - Parsing input [1] using module [csv]
+DEBUG Main 1464619739 - Exiting
+DEBUG Main 1464619924 - Input modules to process: 1
+DEBUG Main 1464619924 - Output modules to process: 0
+DEBUG Main 1464619924 - Number of parsing rules: 0
+INFO Main 1464619924 - Parsing input [1] using module [csv]
+DEBUG Main 1464619932 - Input modules to process: 1
+DEBUG Main 1464619932 - Output modules to process: 0
+DEBUG Main 1464619932 - Number of parsing rules: 0
+INFO Main 1464619932 - Parsing input [1] using module [csv]
+DEBUG Main 1464619932 - Exiting
+DEBUG Main 1464620255 - Input modules to process: 1
+DEBUG Main 1464620255 - Output modules to process: 0
+DEBUG Main 1464620255 - Number of parsing rules: 0
+INFO Main 1464620255 - Parsing input [1] using module [csv]
+DEBUG Main 1464620280 - Input modules to process: 1
+DEBUG Main 1464620280 - Output modules to process: 0
+DEBUG Main 1464620280 - Number of parsing rules: 0
+INFO Main 1464620280 - Parsing input [1] using module [csv]
+DEBUG Main 1464620325 - Input modules to process: 1
+DEBUG Main 1464620325 - Output modules to process: 0
+DEBUG Main 1464620325 - Number of parsing rules: 0
+INFO Main 1464620325 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464620325 - Input called: {'module': 'CSV', 'id': '1'}
+DEBUG Main 1464620340 - Input modules to process: 1
+DEBUG Main 1464620340 - Output modules to process: 0
+DEBUG Main 1464620340 - Number of parsing rules: 0
+INFO Main 1464620340 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464620340 - Input called: {'id': '1', 'module': 'CSV'}
+DEBUG Main 1464620844 - Input modules to process: 1
+DEBUG Main 1464620844 - Output modules to process: 0
+DEBUG Main 1464620844 - Number of parsing rules: 0
+INFO Main 1464620844 - Parsing input [1] using module [CSV]
+DEBUG Main 1464620853 - Input modules to process: 1
+DEBUG Main 1464620853 - Output modules to process: 0
+DEBUG Main 1464620853 - Number of parsing rules: 0
+INFO Main 1464620853 - Parsing input [1] using module [CSV]
+DEBUG Main 1464620859 - Input modules to process: 1
+DEBUG Main 1464620859 - Output modules to process: 0
+DEBUG Main 1464620859 - Number of parsing rules: 0
+INFO Main 1464620859 - Parsing input [1] using module [CSV]
+DEBUG Main 1464620921 - Input modules to process: 1
+DEBUG Main 1464620921 - Output modules to process: 0
+DEBUG Main 1464620921 - Number of parsing rules: 0
+INFO Main 1464620921 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464620921 - Creating staging table: ps_8s_2s_ds_Os_Rs_As_ms_Ds_As_ts_8s_6s_Bs_Es_0
+DEBUG Main 1464620938 - Input modules to process: 1
+DEBUG Main 1464620938 - Output modules to process: 0
+DEBUG Main 1464620938 - Number of parsing rules: 0
+INFO Main 1464620938 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464620938 - Creating staging table: s_1CrlNQNBxMGHIkFr
+DEBUG Main 1464620940 - Input modules to process: 1
+DEBUG Main 1464620940 - Output modules to process: 0
+DEBUG Main 1464620940 - Number of parsing rules: 0
+INFO Main 1464620940 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464620940 - Creating staging table: s_HXcBVMWz4FDK9msR
+DEBUG Main 1464620963 - Input modules to process: 1
+DEBUG Main 1464620963 - Output modules to process: 0
+DEBUG Main 1464620963 - Number of parsing rules: 0
+INFO Main 1464620963 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464620963 - Creating staging table: s_Tj6S6iZpmocczvgV1464620963
+DEBUG Main 1464620994 - Input modules to process: 1
+DEBUG Main 1464620994 - Output modules to process: 0
+DEBUG Main 1464620994 - Number of parsing rules: 0
+INFO Main 1464620994 - Parsing input [1] using module [CSV]
+DEBUG Main 1464621004 - Input modules to process: 1
+DEBUG Main 1464621004 - Output modules to process: 0
+DEBUG Main 1464621004 - Number of parsing rules: 0
+INFO Main 1464621004 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464621004 - Creating staging table: s_sawh83lWWBMFFUUu0x574c57cc
+DEBUG Main 1464621008 - Input modules to process: 1
+DEBUG Main 1464621008 - Output modules to process: 0
+DEBUG Main 1464621008 - Number of parsing rules: 0
+INFO Main 1464621008 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464621008 - Creating staging table: s_yw1BHHTUbPIGA1Fz0x574c57d0
+DEBUG Main 1464621021 - Input modules to process: 1
+DEBUG Main 1464621021 - Output modules to process: 0
+DEBUG Main 1464621021 - Number of parsing rules: 0
+INFO Main 1464621021 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464621021 - Creating staging table: s_K2LojhBX9HSt0x574c57dd
+DEBUG Main 1464621691 - Input modules to process: 1
+DEBUG Main 1464621691 - Output modules to process: 0
+DEBUG Main 1464621691 - Number of parsing rules: 0
+INFO Main 1464621691 - Parsing input [1] using module [CSV]
+DEBUG Main 1464621698 - Input modules to process: 1
+DEBUG Main 1464621698 - Output modules to process: 0
+DEBUG Main 1464621698 - Number of parsing rules: 0
+INFO Main 1464621698 - Parsing input [1] using module [CSV]
+ERROR CSV 1464621698 - 'file'
+DEBUG Main 1464621724 - Input modules to process: 1
+DEBUG Main 1464621724 - Output modules to process: 0
+DEBUG Main 1464621724 - Number of parsing rules: 0
+INFO Main 1464621724 - Parsing input [1] using module [CSV]
+ERROR CSV 1464621724 - 'file'
+DEBUG Main 1464621724 - Exiting
+DEBUG Main 1464621754 - Input modules to process: 1
+DEBUG Main 1464621754 - Output modules to process: 0
+DEBUG Main 1464621754 - Number of parsing rules: 0
+INFO Main 1464621754 - Parsing input [1] using module [CSV]
+ERROR CSV 1464621754 - 'file'
+DEBUG Main 1464621754 - Exiting
+DEBUG Main 1464621945 - Input modules to process: 1
+DEBUG Main 1464621945 - Output modules to process: 0
+DEBUG Main 1464621945 - Number of parsing rules: 0
+INFO Main 1464621945 - Parsing input [1] using module [CSV]
+ERROR CSV 1464621945 - Error parsing module configuration key 'headers'
+ERROR CSV 1464621945 - Cannot parse CSV file. 'file'
+DEBUG CSV 1464621945 - Creating staging table: s_wT7Wl3hZQhtC0x574c5b79
+ERROR CSV 1464621945 - Cannot create staging table. name 'db' is not defined
+DEBUG Main 1464621945 - Exiting
+DEBUG Main 1464621988 - Input modules to process: 1
+DEBUG Main 1464621988 - Output modules to process: 0
+DEBUG Main 1464621988 - Number of parsing rules: 0
+INFO Main 1464621988 - Parsing input [1] using module [CSV]
+ERROR CSV 1464621988 - Error parsing module configuration key 'headers'
+DEBUG CSV 1464621988 - Exiting
+DEBUG Main 1464622165 - Input modules to process: 1
+DEBUG Main 1464622165 - Output modules to process: 0
+DEBUG Main 1464622165 - Number of parsing rules: 0
+INFO Main 1464622165 - Parsing input [1] using module [CSV]
+ERROR CSV 1464622165 - Error parsing module configuration key Can't convert 'dict' object to str implicitly
+DEBUG CSV 1464622165 - Exiting
+DEBUG Main 1464622183 - Input modules to process: 1
+DEBUG Main 1464622183 - Output modules to process: 0
+DEBUG Main 1464622183 - Number of parsing rules: 0
+INFO Main 1464622183 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464622183 - Reading columns [{'username': 0, 'email': 1}] from file [sample.csv]
+ERROR CSV 1464622183 - Cannot parse CSV file. [Errno 2] No such file or directory: 'sample.csv'
+DEBUG CSV 1464622183 - Exiting
+DEBUG Main 1464622230 - Input modules to process: 1
+DEBUG Main 1464622230 - Output modules to process: 0
+DEBUG Main 1464622230 - Number of parsing rules: 0
+INFO Main 1464622230 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464622230 - Reading columns [{'username': 0, 'email': 1}] from file [sample.csv]
+ERROR CSV 1464622230 - Cannot parse CSV file. [Errno 2] No such file or directory: 'sample.csv'
+DEBUG CSV 1464622230 - Exiting
+DEBUG Main 1464622240 - Input modules to process: 1
+DEBUG Main 1464622240 - Output modules to process: 0
+DEBUG Main 1464622240 - Number of parsing rules: 0
+INFO Main 1464622240 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464622240 - Reading columns [{'email': 1, 'username': 0}] from file [sample.csv]
+ERROR CSV 1464622240 - Cannot parse CSV file. [Errno 2] No such file or directory: 'sample.csv'
+DEBUG CSV 1464622240 - Exiting
+DEBUG Main 1464622248 - Input modules to process: 1
+DEBUG Main 1464622248 - Output modules to process: 0
+DEBUG Main 1464622248 - Number of parsing rules: 0
+INFO Main 1464622248 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464622248 - Reading columns [{'email': 1, 'username': 0}] from file [sample.csv]
+ERROR CSV 1464622248 - Cannot parse CSV file. [Errno 2] No such file or directory: 'sample.csv'
+DEBUG CSV 1464622248 - Exiting
+DEBUG Main 1464622296 - Input modules to process: 1
+DEBUG Main 1464622296 - Output modules to process: 0
+DEBUG Main 1464622296 - Number of parsing rules: 0
+INFO Main 1464622296 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464622296 - Reading columns [{'username': 0, 'email': 1}] from file [sample.csv]
+ERROR CSV 1464622296 - Cannot parse CSV file. [Errno 2] No such file or directory: 'sample.csv'
+DEBUG CSV 1464622296 - Exiting
+DEBUG Main 1464622398 - Input modules to process: 1
+DEBUG Main 1464622398 - Output modules to process: 0
+DEBUG Main 1464622398 - Number of parsing rules: 0
+INFO Main 1464622398 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464622398 - Reading columns [{'username': 0, 'email': 1}] from file [sample.csv]
+ERROR CSV 1464622398 - [Errno 2] No such file or directory: 'sample.csv'
+DEBUG CSV 1464622398 - Exiting
+DEBUG Main 1464622476 - Input modules to process: 1
+DEBUG Main 1464622476 - Output modules to process: 0
+DEBUG Main 1464622476 - Number of parsing rules: 0
+INFO Main 1464622476 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464622476 - Reading columns [{'username': 0, 'email': 1}] from file [sample.csv]
+ERROR CSV 1464622476 - [Errno 2] No such file or directory: 'sample.csv'
+DEBUG CSV 1464622476 - Exiting
+DEBUG Main 1464622572 - Input modules to process: 1
+DEBUG Main 1464622572 - Output modules to process: 0
+DEBUG Main 1464622572 - Number of parsing rules: 0
+INFO Main 1464622572 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464622572 - Reading columns [{'username': 0, 'email': 1}] from file [sample.csv]
+ERROR CSV 1464622572 - [Errno 2] No such file or directory: 'sample.csv'
+DEBUG CSV 1464622572 - Exiting
+DEBUG Main 1464622756 - Input modules to process: 1
+DEBUG Main 1464622756 - Output modules to process: 0
+DEBUG Main 1464622756 - Number of parsing rules: 0
+INFO Main 1464622756 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464622756 - Reading columns [{'username': 0, 'email': 1}] from file [sample.csv]
+ERROR CSV 1464622756 - [Errno 2] No such file or directory: 'sample.csv'
+DEBUG Main 1464622766 - Input modules to process: 1
+DEBUG Main 1464622766 - Output modules to process: 0
+DEBUG Main 1464622766 - Number of parsing rules: 0
+INFO Main 1464622766 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464622766 - Reading columns [{'username': 0, 'email': 1}] from file [sample.csv]
+ERROR CSV 1464622766 - [Errno 2] No such file or directory: 'sample.csv'
+DEBUG CSV 1464622766 - Total run time: 0
+DEBUG CSV 1464622766 - Exiting
+DEBUG Main 1464622773 - Input modules to process: 1
+DEBUG Main 1464622773 - Output modules to process: 0
+DEBUG Main 1464622773 - Number of parsing rules: 0
+INFO Main 1464622773 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464622773 - Reading columns [{'username': 0, 'email': 1}] from file [sample.csv]
+ERROR CSV 1464622773 - [Errno 2] No such file or directory: 'sample.csv'
+DEBUG CSV 1464622773 - Total run time: 0s
+DEBUG CSV 1464622773 - Exiting
+DEBUG Main 1464622820 - Input modules to process: 1
+DEBUG Main 1464622820 - Output modules to process: 0
+DEBUG Main 1464622820 - Number of parsing rules: 0
+INFO Main 1464622820 - Parsing input [1] using module [CSV]
+DEBUG CSV 1464622820 - Reading columns [{'username': 0, 'email': 1}] from file [sample.csv]
+ERROR CSV 1464622820 - [Errno 2] No such file or directory: 'sample.csv'
+DEBUG CSV 1464622820 - Total run time: 0s
+DEBUG CSV 1464622820 - Exiting
+DEBUG Main 1464622850 - Input modules to process: 2
+DEBUG Main 1464622850 - Output modules to process: 0
+DEBUG Main 1464622850 - Number of parsing rules: 0
+INFO Main 1464622850 - Parsing input [sample csv] using module [CSV]
+DEBUG CSV 1464622850 - Reading columns [{'username': 0, 'email': 1}] from file [sample.csv]
+ERROR CSV 1464622850 - [Errno 2] No such file or directory: 'sample.csv'
+INFO CSV 1464622850 - Parsing input [blah] using module [blah]
+ERROR CSV 1464622850 - Unknown module name.
+DEBUG CSV 1464622850 - Total run time: 0s
+DEBUG CSV 1464622850 - Exiting
+INFO Main 1464622902 - Parsing input [sample csv] using module [CSV]
+ERROR CSV 1464622902 - [Errno 2] No such file or directory: 'sample.csv'
+INFO CSV 1464622902 - Parsing input [blah] using module [blah]
+ERROR CSV 1464622902 - Unknown module name.
+INFO Main 1464623346 - Parsing input [sample csv] using module [CSV]
+ERROR CSV 1464623346 - [Errno 2] No such file or directory: 'sample.csv'
+INFO CSV 1464623346 - Parsing input [blah] using module [blah]
+ERROR CSV 1464623346 - Unknown module name.
+INFO Main 1464623387 - Parsing input [sample csv] using module [CSV]
+ERROR CSV 1464623387 - name 'db' is not defined
+INFO CSV 1464623387 - Parsing input [blah] using module [blah]
+ERROR CSV 1464623387 - Unknown module name.
+INFO Main 1464623404 - Parsing input [sample csv] using module [CSV]
+ERROR CSV 1464623404 - near ":a": syntax error
+INFO CSV 1464623404 - Parsing input [blah] using module [blah]
+ERROR CSV 1464623404 - Unknown module name.
+INFO Main 1464623469 - Parsing input [sample csv] using module [CSV]
+INFO Main 1464623469 - Parsing input [blah] using module [blah]
+ERROR Main 1464623469 - Unknown module name.
+DEBUG Main 1464623479 - Input modules to process: 2
+DEBUG Main 1464623479 - Output modules to process: 0
+DEBUG Main 1464623479 - Number of parsing rules: 0
+INFO Main 1464623479 - Parsing input [sample csv] using module [CSV]
+DEBUG CSV 1464623479 - Reading file [data/sample.csv]
+DEBUG CSV 1464623479 - Skipping headers line
+DEBUG CSV 1464623479 - Creating staging table: s_Z5gBqxeO4oJq0x574c6177
+INFO Main 1464623479 - Parsing input [blah] using module [blah]
+ERROR Main 1464623479 - Unknown module name.
+DEBUG Main 1464623479 - Total run time: 0s
+DEBUG Main 1464623479 - Exiting
+DEBUG Main 1464623733 - Input modules to process: 2
+DEBUG Main 1464623733 - Output modules to process: 0
+DEBUG Main 1464623733 - Number of parsing rules: 0
+INFO Main 1464623733 - Parsing input [sample csv] using module [CSV]
+DEBUG CSV 1464623733 - Reading file [data/sample.csv]
+DEBUG CSV 1464623733 - Skipping headers line
+DEBUG CSV 1464623733 - Creating staging table: s_Te9XfkrTxSpK0x574c6275
+ERROR CSV 1464623733 - near "TABLE": syntax error
+INFO CSV 1464623733 - Parsing input [blah] using module [blah]
+ERROR CSV 1464623733 - Unknown module name.
+DEBUG CSV 1464623733 - Total run time: 0s
+DEBUG CSV 1464623733 - Exiting
+DEBUG Main 1464623741 - Input modules to process: 2
+DEBUG Main 1464623741 - Output modules to process: 0
+DEBUG Main 1464623741 - Number of parsing rules: 0
+INFO Main 1464623741 - Parsing input [sample csv] using module [CSV]
+DEBUG CSV 1464623741 - Reading file [data/sample.csv]
+DEBUG CSV 1464623741 - Skipping headers line
+DEBUG CSV 1464623741 - Creating staging table: s_2WTtJhkZ5jxb0x574c627d
+INFO Main 1464623742 - Parsing input [blah] using module [blah]
+ERROR Main 1464623742 - Unknown module name.
+DEBUG Main 1464623742 - Total run time: 1s
+DEBUG Main 1464623742 - Exiting
+DEBUG Main 1464623785 - Input modules to process: 2
+DEBUG Main 1464623785 - Output modules to process: 0
+DEBUG Main 1464623785 - Number of parsing rules: 0
+INFO Main 1464623785 - Parsing input [sample csv] using module [CSV]
+DEBUG CSV 1464623785 - Reading file [data/sample.csv]
+DEBUG CSV 1464623785 - Skipping headers line
+DEBUG CSV 1464623785 - Creating staging table: s_yvcxYZJLYywf0x574c62a9
+DEBUG CSV 1464623785 - Read 2 rows.
+INFO Main 1464623785 - Parsing input [blah] using module [blah]
+ERROR Main 1464623785 - Unknown module name.
+DEBUG Main 1464623785 - Total run time: 0s
+DEBUG Main 1464623785 - Exiting
+DEBUG Main 1464624005 - Input modules to process: 2
+DEBUG Main 1464624005 - Output modules to process: 0
+DEBUG Main 1464624005 - Number of parsing rules: 0
+INFO Main 1464624005 - Parsing input [sample csv] using module [CSV]
+DEBUG CSV 1464624005 - Reading file [data/sample.csv]
+DEBUG CSV 1464624005 - Skipping headers line
+DEBUG CSV 1464624005 - Creating staging table: s_PXhrYqWT8S0v0x574c6385
+DEBUG CSV 1464624005 - Read 2 rows.
+INFO Main 1464624005 - Parsing input [blah] using module [blah]
+ERROR Main 1464624005 - Unknown module name.
+DEBUG Main 1464624005 - Total run time: 0s
+DEBUG Main 1464624005 - Exiting
+DEBUG Main 1464624175 - Input modules to process: 2
+DEBUG Main 1464624175 - Output modules to process: 0
+DEBUG Main 1464624175 - Number of parsing rules: 0
+INFO Main 1464624175 - Parsing input [sample csv] using module [CSV]
+DEBUG CSV 1464624175 - Reading file [data/sample.csv]
+DEBUG CSV 1464624175 - Creating staging table: s_bmOLGlAoM11h0x574c642f
+ERROR CSV 1464624175 - '_csv.reader' object has no attribute 'next'
+INFO CSV 1464624175 - Parsing input [blah] using module [blah]
+ERROR CSV 1464624175 - Unknown module name.
+DEBUG CSV 1464624175 - Total run time: 0s
+DEBUG CSV 1464624175 - Exiting
+DEBUG Main 1464624224 - Input modules to process: 2
+DEBUG Main 1464624224 - Output modules to process: 0
+DEBUG Main 1464624224 - Number of parsing rules: 0
+INFO Main 1464624224 - Parsing input [sample csv] using module [CSV]
+DEBUG CSV 1464624224 - Reading file [data/sample.csv]
+DEBUG CSV 1464624224 - Creating staging table: s_h5szpkpUzG430x574c6460
+ERROR CSV 1464624224 - '_csv.reader' object has no attribute 'next'
+INFO CSV 1464624224 - Parsing input [blah] using module [blah]
+ERROR CSV 1464624224 - Unknown module name.
+DEBUG CSV 1464624224 - Total run time: 0s
+DEBUG CSV 1464624224 - Exiting
+DEBUG Main 1464624300 - Input modules to process: 2
+DEBUG Main 1464624300 - Output modules to process: 0
+DEBUG Main 1464624300 - Number of parsing rules: 0
+INFO Main 1464624300 - Parsing input [sample csv] using module [CSV]
+DEBUG CSV 1464624300 - Reading file [data/sample.csv]
+DEBUG CSV 1464624300 - Creating staging table: s_mRPHCZKsmzHP0x574c64ac
+ERROR CSV 1464624300 - near "?": syntax error
+INFO CSV 1464624300 - Parsing input [blah] using module [blah]
+ERROR CSV 1464624300 - Unknown module name.
+DEBUG CSV 1464624300 - Total run time: 0s
+DEBUG CSV 1464624300 - Exiting
+DEBUG Main 1464624451 - Input modules to process: 2
+DEBUG Main 1464624451 - Output modules to process: 0
+DEBUG Main 1464624451 - Number of parsing rules: 0
+INFO Main 1464624451 - Parsing input [sample csv] using module [CSV]
+DEBUG CSV 1464624451 - Reading file [data/sample.csv]
+DEBUG CSV 1464624451 - Creating staging table: s_uDacHFz8so2s0x574c6543
+ERROR CSV 1464624451 - near ")": syntax error
+INFO CSV 1464624451 - Parsing input [blah] using module [blah]
+ERROR CSV 1464624451 - Unknown module name.
+DEBUG CSV 1464624451 - Total run time: 0s
+DEBUG CSV 1464624451 - Exiting
+DEBUG Main 1464624473 - Input modules to process: 2
+DEBUG Main 1464624473 - Output modules to process: 0
+DEBUG Main 1464624473 - Number of parsing rules: 0
+INFO Main 1464624473 - Parsing input [sample csv] using module [CSV]
+DEBUG CSV 1464624473 - Reading file [data/sample.csv]
+DEBUG CSV 1464624473 - Creating staging table: s_jOtgdsBFC1ux0x574c6559
+DEBUG Main 1464624490 - Input modules to process: 2
+DEBUG Main 1464624490 - Output modules to process: 0
+DEBUG Main 1464624490 - Number of parsing rules: 0
+INFO Main 1464624490 - Parsing input [sample csv] using module [CSV]
+DEBUG CSV 1464624490 - Reading file [data/sample.csv]
+DEBUG CSV 1464624490 - Creating staging table: s_YBeX6hRRsTHB0x574c656a
+ERROR CSV 1464624490 - near "s_YBeX6hRRsTHB0x574c656a": syntax error
+INFO CSV 1464624490 - Parsing input [blah] using module [blah]
+ERROR CSV 1464624490 - Unknown module name.
+DEBUG CSV 1464624490 - Total run time: 0s
+DEBUG CSV 1464624490 - Exiting
