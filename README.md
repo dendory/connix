@@ -1,8 +1,8 @@
 # Connix
 
-Python data manipulation utility. Connix can be used to input data from many different types of sources, process that data, then output the result. This is done by a number of modules. The input rules are applied, then process, and finally output. It can be used to read information from a CSV file, Twitter, a backend database and more, then produce meaningful results.
+Python data manipulation utility. Connix can be used to input data from many different types of sources, parse that data, then output the result. This is done by a number of modules. The input rules are applied, then parse, and finally output. It can be used to read information from a CSV file, Twitter, a backend database and more, then produce meaningful results. It requires Python 3.x.
 
-The current version is in early-alpha: 0.0.1
+The current version is in early-alpha: **0.0.1**
 
 These are the module names and configuration parameters expected:
 
@@ -16,7 +16,7 @@ The global configuration values are added to the top of the config file, and not
 
 ## Modules
 
-Modules handle **input**, **output**, **process** or a combination of such.
+Modules handle **input**, **output**, **parse** or a combination of such.
 
 ### CSV
 
@@ -31,9 +31,14 @@ The CSV module can read and write plain text CSV files. These files must have a 
 * `mode: [clear|add|merge]` The mode to use for data when added to an existing table. The module will either **clear** the existing data before insertion, **add** all data to the existing ones, or **merge** rows based on the table's primary key. You should pre-create the table with *inittable* and set a primary key to use *merge*.
 * `delimiter: <character>` The character to use between columns. Optional, defaults to a comma.
 
+#### parse
+
 #### output
 
-#### process
+* `id: <name>` This is a unique name for the output.
+* `module: "csv"` The module name to call.
+* `file: <filename>` The CSV file to write to. Optional, if unspecified a random unique file name is selected.
+* `table: <table name>` The table containing the data to write.
 
 ### InitTable
 
@@ -46,4 +51,9 @@ This module will create, replace or remove tables for use with other modules.
 * `table: <table name>` The name of the table. Optional, a random unique name will be used if not specified.
 * `mode: [create|replace|remove]` The mode of operation. The module will **create** a table or abort, **replace** a table if it already exists or create it if not, or **remove** a table.
 * `columns: { name: <name of the column>, primary: [true|false], type: [text|number] }` The columns definition for the table. Only one primary key must be specified. At least one column must exist.
+
+#### parse
+
+#### output
+
 

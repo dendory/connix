@@ -41,13 +41,29 @@ util.debug(cfg, "Input modules to process: " + str(len(input)))
 util.debug(cfg, "Output modules to process: " + str(len(output)))
 util.debug(cfg, "Number of parsing rules: " + str(len(parse)))
 
-# Parse inputs
+# Process inputs
 for x in input:
-	util.info(cfg, "Parsing input [" + x['id'] + "] using module [" + x['module'] + "]")
+	util.info(cfg, "Processing input [" + x['id'] + "] using module [" + x['module'] + "]")
 	if x['module'].lower() == 'csv':
 		csv.input(cfg, x)
 	elif x['module'].lower() == 'inittable':
 		inittable.input(cfg, x)
+	else:
+		util.err(cfg, "Unknown module name.")
+
+# Process parses
+for x in parse:
+	util.info(cfg, "Processing parse [" + x['id'] + "] using module [" + x['module'] + "]")
+	if x['module'].lower() == 'csv':
+		csv.parse(cfg, x)
+	else:
+		util.err(cfg, "Unknown module name.")
+
+# Process outputs
+for x in output:
+	util.info(cfg, "Processing output [" + x['id'] + "] using module [" + x['module'] + "]")
+	if x['module'].lower() == 'csv':
+		csv.output(cfg, x)
 	else:
 		util.err(cfg, "Unknown module name.")
 

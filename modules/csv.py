@@ -61,3 +61,24 @@ def input(cfg = {}, x = {}):
 		return False
 	cfg['module'] = "Main"
 	return True
+
+# Process output
+def output(cfg = {}, x = {}):
+	cfg['module'] = "CSV"
+	filename = util.guid("tmp_")
+	if 'file' in x:
+		filename = x['file']
+	try:
+		util.debug(cfg, "Writing table [" + x['table'] + "] to file [" + filename + "]")
+		f = open(filename, "w", newline='')
+		sql = cfg['db'].cursor()
+		sql.execute("SELECT * FROM " + x['table'])
+		csvwriter = csv.writer(f)
+		csvwriter.writerow([i[0] for i in sql.description]) # Write headers
+		csvwriter.writerows(sql) # Write rows
+		f.close()
+	except:
+		util.err(cfg, str(sys.exc_info()[1]))
+		return False
+	cfg['module'] = "Main"
+	return True

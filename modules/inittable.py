@@ -35,6 +35,9 @@ def input(cfg = {}, x = {}):
 			if x['mode'] == "create":
 				cfg['db'].execute("CREATE TABLE " + table + " (" + coldef + ")", []) # Create the table using column definition
 				cfg['db'].commit()		
+		if x['mode'] == "replace":
+			cfg['db'].execute("CREATE TABLE " + table + " (" + coldef + ")", []) # Create the table using column definition
+			cfg['db'].commit()		
 	except:
 		util.err(cfg, str(sys.exc_info()[1]))
 		return False
