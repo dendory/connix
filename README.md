@@ -1,6 +1,8 @@
 # Connix
 
-Python data manipulation utility.
+Python data manipulation utility. Connix can be used to input data from many different types of sources, process that data, then output the result. This is done by a number of modules. The input rules are applied, then process, and finally output. It can be used to read information from a CSV file, Twitter, a backend database and more, then produce meaningful results.
+
+The current version is in early-alpha: 0.0.1
 
 These are the module names and configuration parameters expected:
 
