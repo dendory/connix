@@ -8,9 +8,9 @@ These are the module names and configuration parameters expected:
 
 The global configuration values are added to the top of the config file, and not for a specific module.
 
-* debug: [true|false] - Whether to display debugging messages or not.
-* log: <filename> - Where to write the log.
-* db: <filename> - The database file where to store data.
+* `debug: [true|false]` Whether to display debugging messages or not.
+* `log: <filename>` Where to write the log.
+* `db: <filename>` The database file where to store data.
 
 ## Modules
 
