@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Connix - (C) 2016 Patrick Lambert - Provided under the MIT license
 # Main utility
-from modules import util, config, csv
+from modules import util, config, csv, inittable
 import sqlite3
 import sys
 
@@ -15,6 +15,8 @@ perf = util.unixtime()
 
 # Parse configuration
 cfgfile = "connix.cfg"
+if len(sys.argv) == 2:
+	cfgfile = sys.argv[1]
 util.info(cfg, "Connix v" + version + " starting. Reading configuration file [" + cfgfile + "]")
 rawcfg = config.read_config(cfgfile)
 if not rawcfg['status']:
@@ -44,9 +46,11 @@ for x in input:
 	util.info(cfg, "Parsing input [" + x['id'] + "] using module [" + x['module'] + "]")
 	if x['module'].lower() == 'csv':
 		csv.input(cfg, x)
+	elif x['module'].lower() == 'inittable':
+		inittable.input(cfg, x)
 	else:
 		util.err(cfg, "Unknown module name.")
 
 # End
-util.debug(cfg, "Total run time: " + str(util.unixtime() - perf) + "s")
+util.info(cfg, "Finished parsing. Total run time: " + str(util.unixtime() - perf) + "s")
 util.exit(cfg, 0)

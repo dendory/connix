@@ -1,5 +1,6 @@
 # Connix - (C) 2016 Patrick Lambert - Provided under the MIT license
-# Modules file
+# CSV module - This will read a CSV file containing headers, create a staging table for the data based on the
+# columns/rows in the CSV, then merge that data into an existing table 
 from modules import util
 import csv
 import sys
@@ -7,34 +8,56 @@ import sys
 # Process input
 def input(cfg = {}, x = {}):
 	cfg['module'] = "CSV"
-	stage = util.guid("s_")
+	table = util.guid("tmp_")
+	if 'table' in x:
+		table = x['table']
 	try:
-		util.debug(cfg, "Reading file [" + x['file'] + "]")
-	except:
-		util.err(cfg, "Error parsing module configuration key " + str(sys.exc_info()[1]))
-		return False
-
-	try:
-		f = open(x['file'], "r")
-		util.debug(cfg, "Creating staging table: " + stage)
-		cfg['db'].execute("CREATE TABLE " + stage, [])
-		cfg['db'].commit() 
-		csvreader = csv.reader(f, delimiter=',')
+		util.debug(cfg, "Reading file [" + x['file'] + "] and sending data to table [" + table + "]")
+		f = open(x['file'], "r") # Read CSV file
+		delim = ","
+		if 'delimiter' in x:
+			delim = x['delimiter']
+		csvreader = csv.reader(f, delimiter=delim)
 		headers = next(csvreader)
-		for header in headers:
-			cfg['db'].execute("ALTER TABLE " + stage + "ADD COLUMN ?", [header])
+		util.debug(cfg, "Headers found: " + str(headers))
+		tmp = "CREATE TABLE " + table + " (" # Create statement to be crafted
+		qhs = "" # List of headers
+		qms = "" # Question marks for the insert statement
+		found = False
+		colcount = 0
+		for header in headers: # Go through headers and craft create/insert statement
+			if found:
+				tmp += ", "
+				qms += ", "
+				qhs += ", "
+			found = True
+			tmp += header + " TEXT"
+			qms += "?"
+			qhs += header
+			colcount += 1
+		tmp += ");"
+		try:
+			cfg['db'].execute("SELECT 1 FROM " + table) # If table does not exist, break from 'try' and create it
+			if 'mode' in x:
+				if x['mode'] == 'clear': # If mode is 'clear', delete all rows from existing table
+					cfg['db'].execute("DELETE FROM " + table, [])
+					cfg['db'].commit() 
+		except:
+			cfg['db'].execute(tmp, []) # Create table using crafted statement
 			cfg['db'].commit() 
 		rowcount = 0
-		for line in csvreader:
-			cfg['db'].execute("INSERT INTO " + stage + " VALUES (?, ?)", [line[0], line[1], line[2]])
-			cfg['db'].commit()
+		for line in csvreader: # Go through each line of the CSV and insert values
+			stmt = "INSERT INTO " + table + " (" + qhs + ") VALUES (" + qms + ")"
+			if 'mode' in x:
+				if x['mode'] == 'merge':
+					stmt = "INSERT OR REPLACE INTO " + table + " (" + qhs + ") VALUES (" + qms + ")"
+			cfg['db'].execute(stmt, line)
 			rowcount += 1
-		util.debug(cfg, "Read " + str(rowcount) + " rows.") 
+		cfg['db'].commit()
+		util.debug(cfg, "Read " + str(colcount) + " columns, " + str(rowcount) + " rows.") 
 		f.close()
 	except:
 		util.err(cfg, str(sys.exc_info()[1]))
 		return False
-
-
 	cfg['module'] = "Main"
 	return True
