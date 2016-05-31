@@ -61,7 +61,7 @@ This module will create, replace or remove tables for use with other modules.
 
 ### SQL
 
-This module allows you to run SQL statements against the database.
+This module allows you to run SQL statements against your data.
 
 #### parse
 
