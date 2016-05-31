@@ -1,0 +1,982 @@
+DEBUG Main 1464699577 - Input modules to process: 2
+DEBUG Main 1464699577 - Output modules to process: 1
+DEBUG Main 1464699577 - Number of parsing rules: 0
+INFO Main 1464699577 - Processing input [make table for csv] using module [inittable]
+DEBUG InitTable 1464699577 - Mode [replace] on table [emails]
+DEBUG InitTable 1464699577 - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO Main 1464699577 - Processing input [sample csv] using module [CSV]
+DEBUG CSV 1464699577 - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG CSV 1464699577 - Headers found: ['name', 'username', 'email', 'age']
+DEBUG CSV 1464699578 - Read 4 columns, 3 rows.
+INFO Main 1464699578 - Processing output [output csv] using module [CSV]
+DEBUG CSV 1464699578 - Writing table [emails] to file [data/output.csv]
+INFO CSV 1464699578 - Finished parsing. Total run time: 1s
+DEBUG CSV 1464699578 - Exiting
+DEBUG Main 1464699621 - Input modules to process: 2
+DEBUG Main 1464699621 - Output modules to process: 1
+DEBUG Main 1464699621 - Number of parsing rules: 0
+INFO Main 1464699621 - Processing input [make table for csv] using module [inittable]
+DEBUG InitTable 1464699621 - Mode [replace] on table [emails]
+DEBUG InitTable 1464699621 - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO Main 1464699621 - Processing input [sample csv] using module [CSV]
+DEBUG CSV 1464699621 - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG CSV 1464699621 - Headers found: ['name', 'username', 'email', 'age']
+DEBUG CSV 1464699622 - Read 4 columns, 3 rows.
+INFO Main 1464699622 - Processing output [output csv] using module [CSV]
+DEBUG CSV 1464699622 - Writing table [emails] to file [data/output.csv]
+INFO Main 1464699622 - Finished parsing. Total run time: 1s
+DEBUG Main 1464699622 - Exiting
+DEBUG Main 1464699638 - Input modules to process: 2
+DEBUG Main 1464699638 - Output modules to process: 1
+DEBUG Main 1464699638 - Number of parsing rules: 0
+INFO Main 1464699638 - Processing input [make table for csv] using module [inittable]
+DEBUG InitTable 1464699638 - Mode [replace] on table [emails]
+DEBUG InitTable 1464699638 - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO Main 1464699639 - Processing input [sample csv] using module [CSV]
+DEBUG CSV 1464699639 - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG CSV 1464699639 - Headers found: ['name', 'username', 'email', 'ag']
+ERROR CSV 1464699639 - table emails has no column named ag
+INFO Main 1464699639 - Processing output [output csv] using module [CSV]
+DEBUG CSV 1464699639 - Writing table [emails] to file [data/output.csv]
+INFO Main 1464699639 - Finished parsing. Total run time: 1s
+DEBUG Main 1464699639 - Exiting
+DEBUG Main 1464699709 - Input modules to process: 2
+DEBUG Main 1464699709 - Output modules to process: 1
+DEBUG Main 1464699709 - Number of parsing rules: 0
+INFO Main 1464699709 - Processing input [make table for csv] using module [inittable]
+DEBUG InitTable 1464699709 - Mode [replace] on table [emails]
+DEBUG InitTable 1464699709 - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO Main 1464699709 - Processing input [sample csv] using module [CSV]
+DEBUG CSV 1464699709 - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG CSV 1464699709 - Headers found: ['name', 'username', 'email', 'age']
+DEBUG CSV 1464699709 - Read 4 columns, 3 rows.
+INFO Main 1464699709 - Processing output [output csv] using module [CSV]
+DEBUG CSV 1464699709 - Writing table [emails] to file [data/output.csv]
+INFO Main 1464699709 - Finished parsing. Total run time: 0s
+DEBUG Main 1464699709 - Exiting
+INFO Main 1464699748 - Processing input [make table for csv] using module [inittable]
+INFO Main 1464699748 - Processing input [sample csv] using module [CSV]
+INFO Main 1464699748 - Processing output [output csv] using module [CSV]
+INFO Main 1464699748 - Finished parsing. Total run time: 0s
+===INFO Main 1464699984 - Processing input [make table for csv] using module [inittable]
+INFO Main 1464699984 - Processing input [sample csv] using module [CSV]
+INFO Main 1464699984 - Processing output [output csv] using module [CSV]
+INFO Main 1464699984 - Finished parsing. Total run time: 0s
+===
+INFO Main 1464699996 - Processing input [make table for csv] using module [inittable]
+INFO Main 1464699996 - Processing input [sample csv] using module [CSV]
+INFO Main 1464699996 - Processing output [output csv] using module [CSV]
+INFO Main 1464699996 - Finished parsing. Total run time: 0s
+=====
+INFO  1464700073 Main - Processing input [make table for csv] using module [inittable]
+INFO  1464700073 Main - Processing input [sample csv] using module [CSV]
+INFO  1464700073 Main - Processing output [output csv] using module [CSV]
+INFO  1464700073 Main - Finished parsing. Total run time: 0s
+=====
+DEBUG 1464700085 Main - Input modules to process: 2
+DEBUG 1464700085 Main - Output modules to process: 1
+DEBUG 1464700085 Main - Number of parsing rules: 0
+INFO  1464700085 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464700085 InitTable - Mode [replace] on table [emails]
+DEBUG 1464700085 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, agea INT
+INFO  1464700085 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464700085 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464700085 CSV - Headers found: ['name', 'username', 'email', 'age']
+ERROR 1464700085 CSV  - table emails has no column named age
+INFO  1464700085 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464700085 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464700085 Main - Finished parsing. Total run time: 0s
+DEBUG 1464700085 Main - Exiting
+=====
+DEBUG 1464700087 Main - Input modules to process: 2
+DEBUG 1464700087 Main - Output modules to process: 1
+DEBUG 1464700087 Main - Number of parsing rules: 0
+INFO  1464700087 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464700087 InitTable - Mode [replace] on table [emails]
+DEBUG 1464700087 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464700087 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464700087 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464700087 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464700087 CSV - Read 4 columns, 3 rows.
+INFO  1464700087 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464700087 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464700087 Main - Finished parsing. Total run time: 0s
+DEBUG 1464700087 Main - Exiting
+=====
+DEBUG 1464700630 Main - Input modules to process: 2
+DEBUG 1464700630 Main - Output modules to process: 1
+DEBUG 1464700630 Main - Number of parsing rules: 0
+INFO  1464700630 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464700630 InitTable - Mode [replace] on table [emails]
+DEBUG 1464700630 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464700630 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464700630 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464700630 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464700630 CSV - Read 4 columns, 3 rows.
+INFO  1464700630 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464700630 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464700630 Main - Finished parsing. Total run time: 0s
+DEBUG 1464700630 Main - Exiting
+=====
+DEBUG 1464700635 Main - Input modules to process: 2
+DEBUG 1464700635 Main - Output modules to process: 1
+DEBUG 1464700635 Main - Number of parsing rules: 0
+INFO  1464700635 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464700635 InitTable - Mode [replace] on table [emails]
+DEBUG 1464700635 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, agea INT
+INFO  1464700635 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464700635 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464700635 CSV - Headers found: ['name', 'username', 'email', 'age']
+ERROR 1464700635 CSV  - table emails has no column named age
+INFO  1464700635 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464700635 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464700635 Main - Finished parsing. Total run time: 0s
+DEBUG 1464700635 Main - Exiting
+=====
+DEBUG 1464700646 Main - Input modules to process: 2
+DEBUG 1464700646 Main - Output modules to process: 1
+DEBUG 1464700646 Main - Number of parsing rules: 0
+INFO  1464700646 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464700646 InitTable - Mode [replace] on table [emails]
+DEBUG 1464700646 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, agea INT
+INFO  1464700646 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464700646 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464700646 CSV - Headers found: ['name', 'username', 'email', 'age']
+ERROR 1464700646 CSV  - table emails has no column named age
+DEBUG 1464700646 CSV - Exiting
+=====
+DEBUG 1464700659 Main - Input modules to process: 2
+DEBUG 1464700659 Main - Output modules to process: 1
+DEBUG 1464700659 Main - Number of parsing rules: 0
+INFO  1464700659 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464700659 InitTable - Mode [replace] on table [emails]
+DEBUG 1464700659 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, agea INT
+INFO  1464700659 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464700659 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464700659 CSV - Headers found: ['name', 'username', 'email', 'age']
+ERROR 1464700659 CSV  - table emails has no column named age
+INFO  1464700659 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464700659 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464700659 Main - Finished parsing. Total run time: 0s
+DEBUG 1464700659 Main - Exiting
+=====
+DEBUG 1464700902 Main - Input modules to process: 2
+DEBUG 1464700902 Main - Output modules to process: 1
+DEBUG 1464700902 Main - Number of parsing rules: 1
+INFO  1464700902 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464700902 InitTable - Mode [replace] on table [emails]
+DEBUG 1464700902 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464700902 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464700902 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464700902 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464700903 CSV - Read 4 columns, 3 rows.
+INFO  1464700903 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464700903 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464700903 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464700903 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464700903 Main - Finished parsing. Total run time: 1s
+DEBUG 1464700903 Main - Exiting
+=====
+DEBUG 1464701043 Main - Input modules to process: 2
+DEBUG 1464701043 Main - Output modules to process: 1
+DEBUG 1464701043 Main - Number of parsing rules: 1
+INFO  1464701043 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464701043 InitTable - Mode [replace] on table [emails]
+DEBUG 1464701043 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464701043 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464701043 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464701043 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464701043 CSV - Read 4 columns, 3 rows.
+INFO  1464701043 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464701043 SQL - Query [UPDATEA emails SET age = age + 1;]
+ERROR 1464701043 SQL  - near "UPDATEA": syntax error
+INFO  1464701043 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464701043 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464701043 Main - Finished parsing. Total run time: 0s
+DEBUG 1464701043 Main - Exiting
+=====
+DEBUG 1464701070 Main - Input modules to process: 2
+DEBUG 1464701070 Main - Output modules to process: 1
+DEBUG 1464701070 Main - Number of parsing rules: 1
+INFO  1464701070 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464701070 InitTable - Mode [replace] on table [emails]
+DEBUG 1464701070 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464701070 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464701070 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464701070 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464701070 CSV - Read 4 columns, 3 rows.
+INFO  1464701070 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464701070 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464701071 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464701071 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464701071 Main - Finished parsing. Total run time: 1s
+DEBUG 1464701071 Main - Exiting
+===== 2016-05-31 13:26:40
+DEBUG 1464701200 Main - Input modules to process: 2
+DEBUG 1464701200 Main - Output modules to process: 1
+DEBUG 1464701200 Main - Number of parsing rules: 1
+INFO  1464701200 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464701200 InitTable - Mode [replace] on table [emails]
+DEBUG 1464701200 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464701200 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464701200 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464701200 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464701200 CSV - Read 4 columns, 3 rows.
+INFO  1464701200 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464701200 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464701200 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464701200 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464701200 Main - Finished parsing. Total run time: 0s
+DEBUG 1464701200 Main - Exiting
+===== 0.0.1 2016-05-31 13:27:48
+DEBUG 1464701268 Main - Input modules to process: 2
+DEBUG 1464701268 Main - Output modules to process: 1
+DEBUG 1464701268 Main - Number of parsing rules: 1
+INFO  1464701268 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464701268 InitTable - Mode [replace] on table [emails]
+DEBUG 1464701268 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464701268 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464701268 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464701268 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464701268 CSV - Read 4 columns, 3 rows.
+INFO  1464701268 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464701268 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464701268 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464701268 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464701268 Main - Finished parsing. Total run time: 0s
+DEBUG 1464701268 Main - Exiting
+===== 2016-05-31 13:30:02
+DEBUG 1464701402 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464701402 Main - Input modules to process: 2
+DEBUG 1464701402 Main - Output modules to process: 1
+DEBUG 1464701402 Main - Number of parsing rules: 1
+INFO  1464701402 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464701402 InitTable - Mode [replace] on table [emails]
+DEBUG 1464701402 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464701402 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464701402 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464701402 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464701403 CSV - Read 4 columns, 3 rows.
+INFO  1464701403 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464701403 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464701403 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464701403 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464701403 Main - Finished parsing. Total run time: 1s
+DEBUG 1464701403 Main - Exiting
+===== 2016-05-31 13:38:51
+DEBUG 1464701931 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464701931 Main - Input modules to process: 3
+DEBUG 1464701931 Main - Output modules to process: 1
+DEBUG 1464701931 Main - Number of parsing rules: 1
+INFO  1464701931 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464701931 InitTable - Mode [replace] on table [emails]
+DEBUG 1464701931 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464701931 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464701931 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464701931 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464701932 CSV - Read 4 columns, 3 rows.
+INFO  1464701932 Main - Processing input [an odbc database] using module [odbc]
+ERROR 1464701932 Main - Unknown module name.
+INFO  1464701932 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464701932 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464701932 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464701932 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464701932 Main - Finished parsing. Total run time: 1s
+DEBUG 1464701932 Main - Exiting
+===== 2016-05-31 13:39:36
+DEBUG 1464701976 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464701976 Main - Input modules to process: 3
+DEBUG 1464701976 Main - Output modules to process: 1
+DEBUG 1464701976 Main - Number of parsing rules: 1
+INFO  1464701976 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464701976 InitTable - Mode [replace] on table [emails]
+DEBUG 1464701976 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464701977 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464701977 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464701977 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464701977 CSV - Read 4 columns, 3 rows.
+INFO  1464701977 Main - Processing input [an odbc database] using module [odbc]
+===== 2016-05-31 13:40:15
+DEBUG 1464702015 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464702015 Main - Input modules to process: 3
+DEBUG 1464702015 Main - Output modules to process: 1
+DEBUG 1464702015 Main - Number of parsing rules: 1
+INFO  1464702015 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464702015 InitTable - Mode [replace] on table [emails]
+DEBUG 1464702015 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464702015 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464702015 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464702015 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464702015 CSV - Read 4 columns, 3 rows.
+INFO  1464702015 Main - Processing input [an odbc database] using module [odbc]
+ERROR 1464702015 CSV - 'connection_string'
+INFO  1464702015 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464702015 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464702015 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464702015 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464702015 Main - Finished parsing. Total run time: 0s
+DEBUG 1464702015 Main - Exiting
+===== 2016-05-31 13:40:34
+DEBUG 1464702034 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464702034 Main - Input modules to process: 3
+DEBUG 1464702034 Main - Output modules to process: 1
+DEBUG 1464702034 Main - Number of parsing rules: 1
+INFO  1464702034 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464702034 InitTable - Mode [replace] on table [emails]
+DEBUG 1464702034 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464702034 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464702034 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464702034 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464702034 CSV - Read 4 columns, 3 rows.
+INFO  1464702034 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464702034 CSV - Connecting to [test] and sending data to table [tmp_G2VtiPMOe9wZ0x574d9452]
+ERROR 1464702034 CSV - ('IM002', '[IM002] [Microsoft][ODBC Driver Manager] Data source name not found and no default driver specified (0) (SQLDriverConnect)')
+INFO  1464702034 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464702034 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464702034 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464702034 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464702034 Main - Finished parsing. Total run time: 0s
+DEBUG 1464702034 Main - Exiting
+===== 2016-05-31 13:43:19
+DEBUG 1464702199 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464702199 Main - Input modules to process: 3
+DEBUG 1464702199 Main - Output modules to process: 1
+DEBUG 1464702199 Main - Number of parsing rules: 1
+INFO  1464702199 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464702199 InitTable - Mode [replace] on table [emails]
+DEBUG 1464702199 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464702200 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464702200 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464702200 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464702200 CSV - Read 4 columns, 3 rows.
+INFO  1464702200 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464702200 CSV - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=test1;UID=np;PWD=test1] and sending data to table [tmp_Ey0od5yGahqj0x574d94f8]
+INFO  1464702200 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464702200 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464702200 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464702200 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464702200 Main - Finished parsing. Total run time: 1s
+DEBUG 1464702200 Main - Exiting
+===== 2016-05-31 13:50:39
+DEBUG 1464702639 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464702639 Main - Input modules to process: 3
+DEBUG 1464702639 Main - Output modules to process: 1
+DEBUG 1464702639 Main - Number of parsing rules: 1
+INFO  1464702639 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464702639 InitTable - Mode [replace] on table [emails]
+DEBUG 1464702639 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464702639 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464702639 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464702639 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464702639 CSV - Read 4 columns, 3 rows.
+INFO  1464702639 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464702639 CSV - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=test1;UID=np;PWD=test1] and sending data to table [tmp_Cwqhbp12Pbl10x574d96af]
+DEBUG 1464702639 CSV - Read 4 rows.
+INFO  1464702639 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464702639 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464702639 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464702639 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464702639 Main - Finished parsing. Total run time: 0s
+DEBUG 1464702639 Main - Exiting
+===== 2016-05-31 13:52:14
+DEBUG 1464702734 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464702734 Main - Input modules to process: 3
+DEBUG 1464702734 Main - Output modules to process: 1
+DEBUG 1464702734 Main - Number of parsing rules: 1
+INFO  1464702734 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464702734 InitTable - Mode [replace] on table [emails]
+DEBUG 1464702734 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464702734 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464702734 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464702734 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464702734 CSV - Read 4 columns, 3 rows.
+INFO  1464702734 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464702734 CSV - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=test1;UID=np;PWD=test1] and sending data to table [tmp_e19l6zczFEr40x574d970e]
+DEBUG 1464702734 CSV - Read 2 columns, 4 rows.
+INFO  1464702734 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464702734 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464702734 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464702734 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464702734 Main - Finished parsing. Total run time: 0s
+DEBUG 1464702734 Main - Exiting
+===== 2016-05-31 13:55:40
+DEBUG 1464702940 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464702940 Main - Input modules to process: 3
+DEBUG 1464702940 Main - Output modules to process: 1
+DEBUG 1464702940 Main - Number of parsing rules: 1
+INFO  1464702940 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464702940 InitTable - Mode [replace] on table [emails]
+DEBUG 1464702940 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464702940 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464702940 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464702940 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464702940 CSV - Read 4 columns, 3 rows.
+INFO  1464702940 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464702940 CSV - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=test1;UID=np;PWD=test1] and sending data to table [settings]
+DEBUG 1464702940 CSV - Headers found: ['key', 'value']
+ERROR 1464702941 CSV - name 'line' is not defined
+INFO  1464702941 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464702941 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464702941 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464702941 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464702941 Main - Finished parsing. Total run time: 1s
+DEBUG 1464702941 Main - Exiting
+===== 2016-05-31 13:56:28
+DEBUG 1464702988 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464702988 Main - Input modules to process: 3
+DEBUG 1464702988 Main - Output modules to process: 1
+DEBUG 1464702988 Main - Number of parsing rules: 1
+INFO  1464702988 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464702988 InitTable - Mode [replace] on table [emails]
+DEBUG 1464702988 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464702989 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464702989 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464702989 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464702989 CSV - Read 4 columns, 3 rows.
+INFO  1464702989 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464702989 CSV - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=test1;UID=np;PWD=test1] and sending data to table [settings]
+DEBUG 1464702989 CSV - Headers found: ['key', 'value']
+DEBUG 1464702989 CSV - Read 2 columns, 4 rows.
+INFO  1464702989 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464702989 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464702989 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464702989 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464702989 Main - Finished parsing. Total run time: 1s
+DEBUG 1464702989 Main - Exiting
+===== 2016-05-31 13:57:01
+DEBUG 1464703021 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464703021 Main - Input modules to process: 3
+DEBUG 1464703021 Main - Output modules to process: 1
+DEBUG 1464703021 Main - Number of parsing rules: 1
+INFO  1464703021 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464703021 InitTable - Mode [replace] on table [emails]
+DEBUG 1464703021 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464703022 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464703022 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464703022 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464703022 CSV - Read 4 columns, 3 rows.
+INFO  1464703022 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464703022 CSV - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=test1;UID=np;PWD=test1] and sending data to table [settings]
+DEBUG 1464703022 CSV - Headers found: ['key', 'value']
+DEBUG 1464703022 CSV - Read 2 columns, 4 rows.
+INFO  1464703022 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464703022 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464703022 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464703022 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464703022 Main - Finished parsing. Total run time: 1s
+DEBUG 1464703022 Main - Exiting
+===== 2016-05-31 14:00:28
+DEBUG 1464703228 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464703228 Main - Input modules to process: 3
+DEBUG 1464703228 Main - Output modules to process: 1
+DEBUG 1464703228 Main - Number of parsing rules: 1
+INFO  1464703228 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464703228 InitTable - Mode [replace] on table [emails]
+DEBUG 1464703228 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464703229 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464703229 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464703229 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464703229 CSV - Read 4 columns, 3 rows.
+INFO  1464703229 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464703229 CSV - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=test1;UID=np;PWD=test1] and sending data to table [settings]
+DEBUG 1464703229 CSV - Headers found: ['key', 'value']
+DEBUG 1464703229 CSV - Read 2 columns, 4 rows.
+INFO  1464703229 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464703229 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464703229 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464703229 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464703229 Main - Finished parsing. Total run time: 1s
+DEBUG 1464703229 Main - Exiting
+===== 2016-05-31 14:00:30
+DEBUG 1464703230 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464703230 Main - Input modules to process: 3
+DEBUG 1464703230 Main - Output modules to process: 1
+DEBUG 1464703230 Main - Number of parsing rules: 1
+INFO  1464703230 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464703230 InitTable - Mode [replace] on table [emails]
+DEBUG 1464703230 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464703230 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464703230 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464703230 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464703230 CSV - Read 4 columns, 3 rows.
+INFO  1464703230 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464703230 CSV - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=test1;UID=np;PWD=test1] and sending data to table [settings]
+DEBUG 1464703230 CSV - Headers found: ['key', 'value']
+DEBUG 1464703230 CSV - Read 2 columns, 4 rows.
+INFO  1464703230 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464703230 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464703231 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464703231 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464703231 Main - Finished parsing. Total run time: 1s
+DEBUG 1464703231 Main - Exiting
+===== 2016-05-31 14:01:57
+DEBUG 1464703317 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464703317 Main - Input modules to process: 3
+DEBUG 1464703317 Main - Output modules to process: 1
+DEBUG 1464703317 Main - Number of parsing rules: 1
+INFO  1464703317 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464703317 InitTable - Mode [replace] on table [emails]
+DEBUG 1464703317 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464703317 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464703317 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464703317 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464703317 CSV - Read 4 columns, 3 rows.
+INFO  1464703317 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464703317 CSV - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=np;PWD=test1] and sending data to table [settings]
+ERROR 1464703317 CSV - ('42000', '[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Cannot open database "SampleData" requested by the login. The login failed. (4060) (SQLDriverConnect)')
+INFO  1464703317 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464703317 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464703317 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464703317 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464703317 Main - Finished parsing. Total run time: 0s
+DEBUG 1464703317 Main - Exiting
+===== 2016-05-31 14:02:57
+DEBUG 1464703377 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464703377 Main - Input modules to process: 3
+DEBUG 1464703377 Main - Output modules to process: 1
+DEBUG 1464703377 Main - Number of parsing rules: 1
+INFO  1464703377 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464703377 InitTable - Mode [replace] on table [emails]
+DEBUG 1464703377 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464703377 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464703377 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464703377 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464703377 CSV - Read 4 columns, 3 rows.
+INFO  1464703377 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464703377 CSV - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1] and sending data to table [settings]
+DEBUG 1464703377 CSV - Headers found: ['Name', 'IP', 'AssignedTo']
+ERROR 1464703377 CSV - table settings has no column named Name
+INFO  1464703377 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464703377 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464703377 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464703377 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464703377 Main - Finished parsing. Total run time: 0s
+DEBUG 1464703377 Main - Exiting
+===== 2016-05-31 14:03:13
+DEBUG 1464703393 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464703393 Main - Input modules to process: 3
+DEBUG 1464703393 Main - Output modules to process: 1
+DEBUG 1464703393 Main - Number of parsing rules: 1
+INFO  1464703393 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464703393 InitTable - Mode [replace] on table [emails]
+DEBUG 1464703393 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464703393 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464703393 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464703393 CSV - Headers found: ['name', 'username', 'email', 'age']
+DEBUG 1464703393 CSV - Read 4 columns, 3 rows.
+INFO  1464703393 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464703393 CSV - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1] and sending data to table [computers]
+DEBUG 1464703393 CSV - Headers found: ['Name', 'IP', 'AssignedTo']
+DEBUG 1464703393 CSV - Read 3 columns, 11 rows.
+INFO  1464703393 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464703393 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464703393 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464703393 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464703393 Main - Finished parsing. Total run time: 0s
+DEBUG 1464703393 Main - Exiting
+===== 2016-05-31 14:03:55
+DEBUG 1464703435 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464703435 Main - Input modules to process: 3
+DEBUG 1464703435 Main - Output modules to process: 1
+DEBUG 1464703435 Main - Number of parsing rules: 1
+INFO  1464703435 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464703435 InitTable - Mode [replace] on table [emails]
+DEBUG 1464703435 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464703435 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464703435 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464703435 CSV - Headers found: ['name', 'username', 'email', 'age']
+INFO  1464703435 CSV - Read 4 columns, 3 rows.
+INFO  1464703435 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464703435 CSV - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1] and sending data to table [computers]
+DEBUG 1464703435 CSV - Headers found: ['Name', 'IP', 'AssignedTo']
+INFO  1464703435 CSV - Read 3 columns, 11 rows.
+INFO  1464703435 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464703435 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464703435 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464703435 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464703435 Main - Finished parsing. Total run time: 0s
+DEBUG 1464703435 Main - Exiting
+===== 2016-05-31 14:06:26
+DEBUG 1464703586 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464703586 Main - Input modules to process: 3
+DEBUG 1464703586 Main - Output modules to process: 1
+DEBUG 1464703586 Main - Number of parsing rules: 1
+INFO  1464703586 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464703586 InitTable - Mode [replace] on table [emails]
+DEBUG 1464703586 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464703587 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464703587 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464703587 CSV - Headers found: ['name', 'username', 'email', 'age']
+INFO  1464703587 CSV - Read 4 columns, 3 rows.
+INFO  1464703587 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464703587 CSV - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1] and sending data to table [computers]
+DEBUG 1464703587 CSV - Headers found: ['Name', 'IP', 'AssignedTo']
+INFO  1464703587 CSV - Read 3 columns, 11 rows.
+INFO  1464703587 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464703587 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464703587 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464703587 CSV - Writing table [emails] to file [data/output.csv]
+ERROR 1464703587 CSV - info() missing 1 required positional argument: 'msg'
+INFO  1464703587 Main - Finished parsing. Total run time: 1s
+DEBUG 1464703587 Main - Exiting
+===== 2016-05-31 14:06:37
+DEBUG 1464703597 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464703597 Main - Input modules to process: 3
+DEBUG 1464703597 Main - Output modules to process: 1
+DEBUG 1464703597 Main - Number of parsing rules: 1
+INFO  1464703597 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464703597 InitTable - Mode [replace] on table [emails]
+DEBUG 1464703597 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464703597 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464703597 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464703597 CSV - Headers found: ['name', 'username', 'email', 'age']
+INFO  1464703597 CSV - Read 4 columns, 3 rows.
+INFO  1464703597 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464703597 CSV - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1] and sending data to table [computers]
+DEBUG 1464703597 CSV - Headers found: ['Name', 'IP', 'AssignedTo']
+INFO  1464703598 CSV - Read 3 columns, 11 rows.
+INFO  1464703598 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464703598 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464703598 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464703598 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464703598 CSV - Wrote 143 bytes.
+INFO  1464703598 Main - Finished parsing. Total run time: 1s
+DEBUG 1464703598 Main - Exiting
+===== 2016-05-31 14:07:17
+INFO  1464703637 Main - Processing input [make table for csv] using module [inittable]
+INFO  1464703637 Main - Processing input [sample csv] using module [CSV]
+INFO  1464703638 CSV - Read 4 columns, 3 rows.
+INFO  1464703638 Main - Processing input [an odbc database] using module [odbc]
+INFO  1464703638 CSV - Read 3 columns, 11 rows.
+INFO  1464703638 Main - Processing parse [output csv] using module [SQL]
+INFO  1464703638 Main - Processing output [output csv] using module [CSV]
+INFO  1464703638 CSV - Wrote 143 bytes.
+INFO  1464703638 Main - Finished parsing. Total run time: 1s
+===== 2016-05-31 14:16:33
+INFO  1464704193 Main - Processing input [make table for csv] using module [inittable]
+INFO  1464704193 Main - Processing input [sample csv] using module [CSV]
+INFO  1464704193 CSV - Read 4 columns, 3 rows.
+INFO  1464704193 Main - Processing input [an odbc database] using module [odbc]
+INFO  1464704193 ODBC - Read 3 columns, 11 rows.
+INFO  1464704193 Main - Processing parse [output csv] using module [SQL]
+INFO  1464704193 Main - Processing output [output csv] using module [CSV]
+INFO  1464704193 CSV - Wrote 143 bytes.
+INFO  1464704193 Main - Processing output [writing to a new odbc table] using module [odbc]
+ERROR 1464704193 ODBC - name 'odbctable' is not defined
+INFO  1464704193 Main - Finished parsing. Total run time: 0s
+===== 2016-05-31 14:17:09
+INFO  1464704229 Main - Processing input [make table for csv] using module [inittable]
+INFO  1464704229 Main - Processing input [sample csv] using module [CSV]
+INFO  1464704229 CSV - Read 4 columns, 3 rows.
+INFO  1464704229 Main - Processing input [an odbc database] using module [odbc]
+INFO  1464704229 ODBC - Read 3 columns, 11 rows.
+INFO  1464704229 Main - Processing parse [output csv] using module [SQL]
+INFO  1464704229 Main - Processing output [output csv] using module [CSV]
+INFO  1464704229 CSV - Wrote 143 bytes.
+INFO  1464704229 Main - Processing output [writing to a new odbc table] using module [odbc]
+ERROR 1464704229 ODBC - local variable 'sql' referenced before assignment
+INFO  1464704229 Main - Finished parsing. Total run time: 0s
+===== 2016-05-31 14:17:29
+INFO  1464704249 Main - Processing input [make table for csv] using module [inittable]
+INFO  1464704249 Main - Processing input [sample csv] using module [CSV]
+INFO  1464704249 CSV - Read 4 columns, 3 rows.
+INFO  1464704249 Main - Processing input [an odbc database] using module [odbc]
+INFO  1464704249 ODBC - Read 3 columns, 11 rows.
+INFO  1464704249 Main - Processing parse [output csv] using module [SQL]
+INFO  1464704249 Main - Processing output [output csv] using module [CSV]
+INFO  1464704249 CSV - Wrote 143 bytes.
+INFO  1464704249 Main - Processing output [writing to a new odbc table] using module [odbc]
+ERROR 1464704249 ODBC - can only concatenate tuple (not "str") to tuple
+INFO  1464704249 Main - Finished parsing. Total run time: 0s
+===== 2016-05-31 14:17:52
+INFO  1464704272 Main - Processing input [make table for csv] using module [inittable]
+INFO  1464704272 Main - Processing input [sample csv] using module [CSV]
+INFO  1464704272 CSV - Read 4 columns, 3 rows.
+INFO  1464704272 Main - Processing input [an odbc database] using module [odbc]
+INFO  1464704272 ODBC - Read 3 columns, 11 rows.
+INFO  1464704272 Main - Processing parse [output csv] using module [SQL]
+INFO  1464704272 Main - Processing output [output csv] using module [CSV]
+INFO  1464704272 CSV - Wrote 143 bytes.
+INFO  1464704272 Main - Processing output [writing to a new odbc table] using module [odbc]
+ERROR 1464704272 ODBC - can only concatenate tuple (not "str") to tuple
+INFO  1464704272 Main - Finished parsing. Total run time: 0s
+===== 2016-05-31 14:18:32
+INFO  1464704312 Main - Processing input [make table for csv] using module [inittable]
+INFO  1464704312 Main - Processing input [sample csv] using module [CSV]
+INFO  1464704312 CSV - Read 4 columns, 3 rows.
+INFO  1464704312 Main - Processing input [an odbc database] using module [odbc]
+INFO  1464704312 ODBC - Read 3 columns, 11 rows.
+INFO  1464704312 Main - Processing parse [output csv] using module [SQL]
+INFO  1464704312 Main - Processing output [output csv] using module [CSV]
+INFO  1464704312 CSV - Wrote 143 bytes.
+INFO  1464704312 Main - Processing output [writing to a new odbc table] using module [odbc]
+ERROR 1464704312 ODBC - ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Incorrect syntax near the keyword 'OR'. (156) (SQLExecDirectW)")
+INFO  1464704312 Main - Finished parsing. Total run time: 0s
+===== 2016-05-31 14:19:14
+INFO  1464704354 Main - Processing input [make table for csv] using module [inittable]
+INFO  1464704354 Main - Processing input [sample csv] using module [CSV]
+INFO  1464704354 CSV - Read 4 columns, 3 rows.
+INFO  1464704354 Main - Processing input [an odbc database] using module [odbc]
+INFO  1464704354 ODBC - Read 3 columns, 11 rows.
+INFO  1464704354 Main - Processing parse [output csv] using module [SQL]
+INFO  1464704354 Main - Processing output [output csv] using module [CSV]
+INFO  1464704354 CSV - Wrote 143 bytes.
+INFO  1464704354 Main - Processing output [writing to a new odbc table] using module [odbc]
+ERROR 1464704354 ODBC - ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Incorrect syntax near the keyword 'OR'. (156) (SQLExecDirectW)")
+INFO  1464704354 Main - Finished parsing. Total run time: 0s
+===== 2016-05-31 14:19:57
+INFO  1464704397 Main - Processing input [make table for csv] using module [inittable]
+INFO  1464704397 Main - Processing input [sample csv] using module [CSV]
+INFO  1464704397 CSV - Read 4 columns, 3 rows.
+INFO  1464704397 Main - Processing input [an odbc database] using module [odbc]
+INFO  1464704397 ODBC - Read 3 columns, 11 rows.
+INFO  1464704397 Main - Processing parse [output csv] using module [SQL]
+INFO  1464704397 Main - Processing output [output csv] using module [CSV]
+INFO  1464704397 CSV - Wrote 143 bytes.
+INFO  1464704397 Main - Processing output [writing to a new odbc table] using module [odbc]
+INFO  1464704397 Main - Finished parsing. Total run time: 0s
+===== 2016-05-31 14:20:11
+DEBUG 1464704411 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464704411 Main - Input modules to process: 3
+DEBUG 1464704411 Main - Output modules to process: 2
+DEBUG 1464704411 Main - Number of parsing rules: 1
+INFO  1464704411 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464704411 InitTable - Mode [replace] on table [emails]
+DEBUG 1464704411 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464704412 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464704412 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464704412 CSV - Headers found: ['name', 'username', 'email', 'age']
+INFO  1464704412 CSV - Read 4 columns, 3 rows.
+INFO  1464704412 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464704412 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1] and sending data to table [computers]
+DEBUG 1464704412 ODBC - Headers found: ['Name', 'IP', 'AssignedTo']
+INFO  1464704412 ODBC - Read 3 columns, 11 rows.
+INFO  1464704412 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464704412 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464704412 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464704412 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464704412 CSV - Wrote 143 bytes.
+INFO  1464704412 Main - Processing output [writing to a new odbc table] using module [odbc]
+DEBUG 1464704412 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1]
+DEBUG 1464704412 ODBC - Writing table [emails] to ODBC table [emails]
+DEBUG 1464704412 ODBC - tmp: CREATE TABLE emails (username TEXT, name TEXT, email TEXT, age TEXT);
+DEBUG 1464704412 ODBC - stmt: INSERT OR REPLACE INTO emails (username, name, email, age) VALUES (?, ?, ?, ?)
+DEBUG 1464704412 ODBC - stmt: INSERT OR REPLACE INTO emails (username, name, email, age) VALUES (?, ?, ?, ?)
+DEBUG 1464704412 ODBC - stmt: INSERT OR REPLACE INTO emails (username, name, email, age) VALUES (?, ?, ?, ?)
+INFO  1464704412 Main - Finished parsing. Total run time: 1s
+DEBUG 1464704412 Main - Exiting
+===== 2016-05-31 14:23:03
+DEBUG 1464704583 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464704583 Main - Input modules to process: 3
+DEBUG 1464704583 Main - Output modules to process: 2
+DEBUG 1464704583 Main - Number of parsing rules: 1
+INFO  1464704583 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464704583 InitTable - Mode [replace] on table [emails]
+DEBUG 1464704583 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464704583 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464704583 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464704583 CSV - Headers found: ['name', 'username', 'email', 'age']
+INFO  1464704583 CSV - Read 4 columns, 3 rows.
+INFO  1464704583 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464704583 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1] and sending data to table [computers]
+DEBUG 1464704583 ODBC - Headers found: ['Name', 'IP', 'AssignedTo']
+INFO  1464704583 ODBC - Read 3 columns, 11 rows.
+INFO  1464704583 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464704583 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464704583 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464704583 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464704583 CSV - Wrote 143 bytes.
+INFO  1464704583 Main - Processing output [writing to a new odbc table] using module [odbc]
+DEBUG 1464704583 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1]
+DEBUG 1464704583 ODBC - Writing table [emails] to ODBC table [emails]
+ERROR 1464704583 ODBC - ('22018', '[22018] [Microsoft][ODBC SQL Server Driver][SQL Server]Operand type clash: bigint is incompatible with text (206) (SQLExecDirectW)')
+INFO  1464704583 Main - Finished parsing. Total run time: 0s
+DEBUG 1464704583 Main - Exiting
+===== 2016-05-31 14:24:04
+DEBUG 1464704644 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464704644 Main - Input modules to process: 3
+DEBUG 1464704644 Main - Output modules to process: 2
+DEBUG 1464704644 Main - Number of parsing rules: 1
+INFO  1464704644 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464704644 InitTable - Mode [replace] on table [emails]
+DEBUG 1464704644 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464704645 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464704645 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464704645 CSV - Headers found: ['name', 'username', 'email', 'age']
+INFO  1464704645 CSV - Read 4 columns, 3 rows.
+INFO  1464704645 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464704645 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1] and sending data to table [computers]
+DEBUG 1464704645 ODBC - Headers found: ['Name', 'IP', 'AssignedTo']
+INFO  1464704645 ODBC - Read 3 columns, 11 rows.
+INFO  1464704645 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464704645 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464704645 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464704645 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464704645 CSV - Wrote 143 bytes.
+INFO  1464704645 Main - Processing output [writing to a new odbc table] using module [odbc]
+DEBUG 1464704645 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1]
+DEBUG 1464704645 ODBC - Writing table [emails] to ODBC table [emails]
+INFO  1464704645 Main - Finished parsing. Total run time: 1s
+DEBUG 1464704645 Main - Exiting
+===== 2016-05-31 14:26:55
+DEBUG 1464704815 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464704815 Main - Input modules to process: 3
+DEBUG 1464704815 Main - Output modules to process: 2
+DEBUG 1464704815 Main - Number of parsing rules: 1
+INFO  1464704815 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464704815 InitTable - Mode [replace] on table [emails]
+DEBUG 1464704815 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464704815 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464704815 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464704815 CSV - Headers found: ['name', 'username', 'email', 'age']
+INFO  1464704815 CSV - Read 4 columns, 3 rows.
+INFO  1464704815 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464704815 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1] and sending data to table [computers]
+DEBUG 1464704815 ODBC - Headers found: ['Name', 'IP', 'AssignedTo']
+INFO  1464704816 ODBC - Read 3 columns, 11 rows.
+INFO  1464704816 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464704816 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464704816 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464704816 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464704816 CSV - Wrote 143 bytes.
+INFO  1464704816 Main - Processing output [writing to a new odbc table] using module [odbc]
+DEBUG 1464704816 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1]
+DEBUG 1464704816 ODBC - Writing table [emails] to ODBC table [emails]
+INFO  1464704816 ODBC - (6, )
+INFO  1464704816 Main - Finished parsing. Total run time: 1s
+DEBUG 1464704816 Main - Exiting
+===== 2016-05-31 14:27:11
+DEBUG 1464704831 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464704831 Main - Input modules to process: 3
+DEBUG 1464704831 Main - Output modules to process: 2
+DEBUG 1464704831 Main - Number of parsing rules: 1
+INFO  1464704831 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464704831 InitTable - Mode [replace] on table [emails]
+DEBUG 1464704831 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464704832 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464704832 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464704832 CSV - Headers found: ['name', 'username', 'email', 'age']
+INFO  1464704832 CSV - Read 4 columns, 3 rows.
+INFO  1464704832 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464704832 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1] and sending data to table [computers]
+DEBUG 1464704832 ODBC - Headers found: ['Name', 'IP', 'AssignedTo']
+INFO  1464704832 ODBC - Read 3 columns, 11 rows.
+INFO  1464704832 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464704832 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464704832 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464704832 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464704832 CSV - Wrote 143 bytes.
+INFO  1464704832 Main - Processing output [writing to a new odbc table] using module [odbc]
+DEBUG 1464704832 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1]
+DEBUG 1464704832 ODBC - Writing table [emails] to ODBC table [emails]
+INFO  1464704832 ODBC - Wrote 9 rows.
+INFO  1464704832 Main - Finished parsing. Total run time: 1s
+DEBUG 1464704832 Main - Exiting
+===== 2016-05-31 14:28:02
+DEBUG 1464704882 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464704882 Main - Input modules to process: 3
+DEBUG 1464704882 Main - Output modules to process: 2
+DEBUG 1464704882 Main - Number of parsing rules: 1
+INFO  1464704882 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464704882 InitTable - Mode [replace] on table [emails]
+DEBUG 1464704882 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464704882 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464704882 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464704882 CSV - Headers found: ['name', 'username', 'email', 'age']
+INFO  1464704882 CSV - Read 4 columns, 3 rows.
+INFO  1464704882 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464704882 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1] and sending data to table [computers]
+DEBUG 1464704882 ODBC - Headers found: ['Name', 'IP', 'AssignedTo']
+INFO  1464704882 ODBC - Read 3 columns, 11 rows.
+INFO  1464704882 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464704882 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464704882 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464704882 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464704882 CSV - Wrote 143 bytes.
+INFO  1464704882 Main - Processing output [writing to a new odbc table] using module [odbc]
+DEBUG 1464704882 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1]
+DEBUG 1464704882 ODBC - Writing table [emails] to ODBC table [emails]
+ERROR 1464704882 ODBC - Can't convert 'int' object to str implicitly
+INFO  1464704882 Main - Finished parsing. Total run time: 0s
+DEBUG 1464704882 Main - Exiting
+===== 2016-05-31 14:28:11
+DEBUG 1464704891 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464704891 Main - Input modules to process: 3
+DEBUG 1464704891 Main - Output modules to process: 2
+DEBUG 1464704891 Main - Number of parsing rules: 1
+INFO  1464704891 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464704891 InitTable - Mode [replace] on table [emails]
+DEBUG 1464704891 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464704891 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464704891 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464704891 CSV - Headers found: ['name', 'username', 'email', 'age']
+INFO  1464704891 CSV - Read 4 columns, 3 rows.
+INFO  1464704891 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464704891 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1] and sending data to table [computers]
+DEBUG 1464704891 ODBC - Headers found: ['Name', 'IP', 'AssignedTo']
+INFO  1464704891 ODBC - Read 3 columns, 11 rows.
+INFO  1464704891 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464704891 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464704891 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464704891 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464704891 CSV - Wrote 143 bytes.
+INFO  1464704891 Main - Processing output [writing to a new odbc table] using module [odbc]
+DEBUG 1464704891 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1]
+DEBUG 1464704891 ODBC - Writing table [emails] to ODBC table [emails]
+INFO  1464704891 ODBC - Wrote 3 rows.
+INFO  1464704891 Main - Finished parsing. Total run time: 0s
+DEBUG 1464704891 Main - Exiting
+===== 2016-05-31 14:28:40
+DEBUG 1464704920 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464704920 Main - Input modules to process: 3
+DEBUG 1464704920 Main - Output modules to process: 2
+DEBUG 1464704920 Main - Number of parsing rules: 1
+INFO  1464704920 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464704920 InitTable - Mode [replace] on table [emails]
+DEBUG 1464704920 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464704920 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464704920 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464704920 CSV - Headers found: ['name', 'username', 'email', 'age']
+INFO  1464704920 CSV - Read 4 columns, 3 rows.
+INFO  1464704920 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464704920 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1] and sending data to table [computers]
+DEBUG 1464704920 ODBC - Headers found: ['Name', 'IP', 'AssignedTo']
+INFO  1464704920 ODBC - Read 3 columns, 11 rows.
+INFO  1464704920 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464704920 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464704920 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464704920 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464704920 CSV - Wrote 143 bytes.
+INFO  1464704920 Main - Processing output [writing to a new odbc table] using module [odbc]
+DEBUG 1464704920 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1]
+DEBUG 1464704920 ODBC - Writing table [emails] to ODBC table [emails]
+INFO  1464704920 ODBC - Wrote 3 rows.
+INFO  1464704920 Main - Finished parsing. Total run time: 0s
+DEBUG 1464704920 Main - Exiting
+===== 2016-05-31 15:32:34
+DEBUG 1464708754 Main - Connix v0.0.1, Python v3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (Intel)] win32
+DEBUG 1464708754 Main - Input modules to process: 3
+DEBUG 1464708754 Main - Output modules to process: 2
+DEBUG 1464708754 Main - Number of parsing rules: 1
+INFO  1464708754 Main - Processing input [make table for csv] using module [inittable]
+DEBUG 1464708754 InitTable - Mode [replace] on table [emails]
+DEBUG 1464708754 InitTable - Column definition: username TEXT PRIMARY KEY, name TEXT, email TEXT, age INT
+INFO  1464708754 Main - Processing input [sample csv] using module [CSV]
+DEBUG 1464708754 CSV - Reading file [data/sample.csv] and sending data to table [emails]
+DEBUG 1464708754 CSV - Headers found: ['name', 'username', 'email', 'age']
+INFO  1464708754 CSV - Read 4 columns, 3 rows.
+INFO  1464708754 Main - Processing input [an odbc database] using module [odbc]
+DEBUG 1464708754 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1] and sending data to table [computers]
+DEBUG 1464708754 ODBC - Headers found: ['Name', 'IP', 'AssignedTo']
+INFO  1464708754 ODBC - Read 3 columns, 11 rows.
+INFO  1464708754 Main - Processing parse [output csv] using module [SQL]
+DEBUG 1464708754 SQL - Query [UPDATE emails SET age = age + 1;]
+INFO  1464708754 Main - Processing output [output csv] using module [CSV]
+DEBUG 1464708754 CSV - Writing table [emails] to file [data/output.csv]
+INFO  1464708754 CSV - Wrote 143 bytes.
+INFO  1464708754 Main - Processing output [writing to a new odbc table] using module [odbc]
+DEBUG 1464708754 ODBC - Connecting to [DRIVER={SQL Server};SERVER=10.10.106.10;DATABASE=SampleData;UID=test1;PWD=test1]
+DEBUG 1464708754 ODBC - Writing table [emails] to ODBC table [emails]
+INFO  1464708754 ODBC - Wrote 3 rows.
+INFO  1464708754 Main - Finished parsing. Total run time: 0s
+DEBUG 1464708754 Main - Exiting

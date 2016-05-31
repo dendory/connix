@@ -9,20 +9,20 @@ import string
 def err(cfg, msg):
 	print("* Error: " + msg)
 	if cfg['log']:
-		cfg['log'].write("ERROR " + cfg['module'] + " " + str(unixtime()) + " - " + msg + "\n")
+		cfg['log'].write("ERROR " + str(unixtime()) + " " + cfg['module'] + " - " + msg + "\n")
 
 # Print a message to the screen
 def info(cfg, msg):
 	print("* " + msg)
 	if cfg['log']:
-		cfg['log'].write("INFO " + cfg['module'] + " " + str(unixtime()) + " - " + msg + "\n")
+		cfg['log'].write("INFO  " + str(unixtime()) + " " + cfg['module'] + " - " + msg + "\n")
 
 # Print a message to the screen
 def debug(cfg, msg):
 	if cfg['debug']:
 		print("* Debug: " + msg)
 		if cfg['log']:
-			cfg['log'].write("DEBUG " + cfg['module'] + " " + str(unixtime()) + " - " + msg + "\n")
+			cfg['log'].write("DEBUG " + str(unixtime()) + " " + cfg['module'] + " - " + msg + "\n")
 
 # Clean up and exit
 def exit(cfg, status):
@@ -41,3 +41,8 @@ def guid(prefix = ""):
 # Current unix time
 def unixtime():
 	return int(time.time())
+
+# Current date and time
+def datetime():
+	return time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())
+

@@ -1,7 +1,6 @@
 # Connix - (C) 2016 Patrick Lambert - Provided under the MIT license
 # Module inittable - Create tables for other modules to use
 from modules import util
-import csv
 import sys
 
 # Process input
@@ -41,5 +40,4 @@ def input(cfg = {}, x = {}):
 	except:
 		util.err(cfg, str(sys.exc_info()[1]))
 		return False
-	cfg['module'] = "Main"
 	return True

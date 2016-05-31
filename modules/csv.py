@@ -4,6 +4,7 @@
 from modules import util
 import csv
 import sys
+import os
 
 # Process input
 def input(cfg = {}, x = {}):
@@ -54,7 +55,7 @@ def input(cfg = {}, x = {}):
 			cfg['db'].execute(stmt, line)
 			rowcount += 1
 		cfg['db'].commit()
-		util.debug(cfg, "Read " + str(colcount) + " columns, " + str(rowcount) + " rows.") 
+		util.info(cfg, "Read " + str(colcount) + " columns, " + str(rowcount) + " rows.") 
 		f.close()
 	except:
 		util.err(cfg, str(sys.exc_info()[1]))
@@ -77,8 +78,8 @@ def output(cfg = {}, x = {}):
 		csvwriter.writerow([i[0] for i in sql.description]) # Write headers
 		csvwriter.writerows(sql) # Write rows
 		f.close()
+		util.info(cfg, "Wrote " + str(os.path.getsize(filename)) + " bytes.")
 	except:
 		util.err(cfg, str(sys.exc_info()[1]))
 		return False
-	cfg['module'] = "Main"
 	return True
