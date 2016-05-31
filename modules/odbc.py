@@ -15,7 +15,7 @@ def input(cfg = {}, x = {}):
 		db = pyodbc.connect(x['dsn'])
 		sql = db.cursor()
 		sql.execute(x['query'])
-		headers = [column[0] for column in sql.description]
+		headers = [i[0] for i in sql.description]
 		rows = sql.fetchall()
 		util.debug(cfg, "Headers found: " + str(headers))
 		tmp = "CREATE TABLE " + table + " (" # Create statement to be crafted

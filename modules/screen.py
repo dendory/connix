@@ -10,6 +10,7 @@ def output(cfg = {}, x = {}):
 		util.debug(cfg, "Displaying table [" + x['table'] + "]")
 		sql = cfg['db'].cursor()
 		sql.execute("SELECT * FROM " + x['table'])
+		print(str([i[0] for i in sql.description]))
 		for row in sql.fetchall():
 			print(str(row)) 
 	except:
