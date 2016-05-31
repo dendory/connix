@@ -1,11 +1,11 @@
 # Connix - (C) 2016 Patrick Lambert - Provided under the MIT license
 # Module ODBC - connect to a databse using a connection string
 from modules import util
-import pyodbc
 import sys
 
 # Process input
 def input(cfg = {}, x = {}):
+	import pyodbc
 	cfg['module'] = "ODBC"
 	table = util.guid("tmp_")
 	if 'table' in x:
@@ -59,6 +59,7 @@ def input(cfg = {}, x = {}):
 
 # Process output
 def output(cfg = {}, x = {}):
+	import pyodbc
 	cfg['module'] = "ODBC"
 	odbctable = util.guid("tmp_")
 	if 'odbctable' in x:

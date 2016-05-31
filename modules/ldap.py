@@ -1,11 +1,11 @@
 # Connix - (C) 2016 Patrick Lambert - Provided under the MIT license
 # Module ODBC - connect to a databse using a connection string
 from modules import util
-import ldap3;
 import sys
 
 # Process input
 def input(cfg = {}, x = {}):
+	import ldap3
 	cfg['module'] = "LDAP"
 	table = util.guid("tmp_")
 	if 'table' in x:
