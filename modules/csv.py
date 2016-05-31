@@ -13,7 +13,7 @@ def input(cfg = {}, x = {}):
 	if 'table' in x:
 		table = x['table']
 	try:
-		util.debug(cfg, "Reading file [" + x['file'] + "] and sending data to table [" + table + "]")
+		util.debug(cfg, "Reading file [" + x['file'] + "] and saving data to table [" + table + "]")
 		f = open(x['file'], "r") # Read CSV file
 		delim = ","
 		if 'delimiter' in x:

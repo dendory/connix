@@ -1,19 +1,28 @@
 # Connix
 
-Python data manipulation utility. Connix can be used to input data from many different types of sources, parse that data, then output the result. This is done by a number of modules. The input rules are applied, then parse, and finally output. It can be used to read information from a CSV file, Twitter, a backend database and more, then produce meaningful results. It requires Python 3.x.
+Connix is a cross-platform data manipulation utility. It has three phases:
 
-The current version is in early-alpha: **0.0.1**
+* input
+* parse
+* output
 
-These are the module names and configuration parameters expected:
+This utility can be used to import data from a large array of inputs, parse and interact with the data in a number of ways, then export the resulting data to a large number of outputs. All of the commands to tell Connix what to do are stored in a single JSON config file.
 
-## Config
+The current version is: **0.0.1**
 
-The global configuration values are added to the top of the config file, and not for a specific module.
+## Installation
+
+Install Python 3.x, then download and extract the Connix ZIP file. To run, type `python connix.py`. It should work fine on Linux and Windows.
+
+## Configuration
+
+Connix reads from the config file you specify, or `connix.cfg` by default. The global configuration values are added to the top of the config file, and not for a specific module.
 
 * `debug: [true|false]` Whether to display debugging messages or not.
 * `log: <filename>` Where to write the log.
 * `db: <filename>` The database file where to store data.
 * `onerror: [continue|abort]` Defines how to handle module errors. Either **continue** with the processes or **abort** and quit.
+
 ## Modules
 
 Modules handle **input**, **output**, **parse** or a combination of such.
@@ -48,7 +57,7 @@ This module will create, replace or remove tables for use with other modules.
 * `module: "inittable"` The module name to call.
 * `table: <table name>` The name of the table to write data to. Optional, a random unique name will be used if not specified.
 * `mode: [create|replace|remove]` The mode of operation. The module will **create** a table or abort, **replace** a table if it already exists or create it if not, or **remove** a table.
-* `columns: { name: <name of the column>, primary: [true|false], type: [text|number] }` The columns definition for the table. Only one primary key must be specified. At least one column must exist.
+* `columns: [ { name: <name of the column>, primary: [true|false], type: [text|number] } ]` The columns definition for the table. Only one primary key must be specified. At least one column must exist.
 
 ### SQL
 
@@ -81,3 +90,32 @@ This module allows you to connect to a backend database using ODBC. Requires the
 * `dsn: <connection string>` A valid connection string to connect to a database server. Example: DRIVER={SQL Server};SERVER=10.0.0.1;DATABASE=test;UID=user;PWD=pass
 * `odbctable: <table name>` The ODBC table name where to output data. Optional, a random unique name will be selected otherwise.
 * `mode: [clear|add|merge]` The mode to use for data when added to an existing ODBC table. The module will either **clear** the existing data before insertion, **add** all data to the existing ones, or **merge** rows based on the table's primary key. You should pre-create the table with *inittable* and set a primary key to use *merge*.
+
+### LDAP
+
+This module allows you to create an LDAP query and get the resulting data. Requires the ldap3 Python module to be installed.
+
+#### input
+
+* `id: <name>` This is a unique name for the input.
+* `module: "ldap"` The module name to call.
+* `server: <LDAP server>` The LDAP server address.
+* `port: <LDAP port>` The LDAP server port.
+* `username: <username>` A valid user to bind to (for Active Directory it should be DOMAIN\\userid). Optional.
+* `password: <password>` The password for that user. Optional.
+* `basedn: <base dn>` The base dn to use for the query. Example: CN=Computers,DC=mydomain,DC=com
+* `filter: <query filter>` The types of objects to return. Example: (&(objectCategory=computer))
+* `attributes: [ { attribute: <attribute> } ]` Object attributes to retrieve. Note that multi-value attributes are not supported, only the first entry will be pulled in those cases.
+* `table: <table name>` The name of the table where to store data. If it doesn't exist then it will be created on the fly. This parameter is optional, and a random unique name will be selected if not specified.
+* `mode: [clear|add|merge]` The mode to use for data when added to an existing table. The module will either **clear** the existing data before insertion, **add** all data to the existing ones, or **merge** rows based on the table's primary key. You should pre-create the table with *inittable* and set a primary key to use *merge*.
+
+### Screen
+
+This is a simple module that can be used to display data directly to the standard output. 
+
+#### output
+
+* `id: <name>` This is a unique name for the input.
+* `module: "odbc"` The module name to call.
+* `table: <table name>` The table containing the data to display.
+

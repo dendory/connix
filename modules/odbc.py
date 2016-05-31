@@ -11,7 +11,7 @@ def input(cfg = {}, x = {}):
 	if 'table' in x:
 		table = x['table']
 	try:
-		util.debug(cfg, "Connecting to [" + x['dsn'] + "] and sending data to table [" + table + "]")
+		util.debug(cfg, "Connecting to [" + x['dsn'] + "] and saving data to table [" + table + "]")
 		db = pyodbc.connect(x['dsn'])
 		sql = db.cursor()
 		sql.execute(x['query'])
