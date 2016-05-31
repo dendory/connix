@@ -119,3 +119,14 @@ This is a simple module that can be used to display data directly to the standar
 * `module: "odbc"` The module name to call.
 * `table: <table name>` The table containing the data to display.
 
+### Files
+
+This module lists files from a folder.
+
+#### input
+
+* `id: <name>` This is a unique name for the input.
+* `module: "files"` The module name to call.
+* `folder: <local path>` The folder to list from.
+* `table: <table name>` The name of the table where to store data. If it doesn't exist then it will be created on the fly. This parameter is optional, and a random unique name will be selected if not specified.
+* `mode: [clear|add|merge]` The mode to use for data when added to an existing table. The module will either **clear** the existing data before insertion, **add** all data to the existing ones, or **merge** rows based on the table's primary key. You should pre-create the table with *inittable* and set a primary key to use *merge*.

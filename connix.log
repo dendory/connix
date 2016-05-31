@@ -1,0 +1,197 @@
+===== 2016-05-31 22:08:12
+INFO  1464732492 Main - Processing input [Make a table] using module [inittable]
+INFO  1464732492 Main - Processing input [Read sample data] using module [CSV]
+INFO  1464732492 CSV - Read 4 columns, 3 rows.
+INFO  1464732492 Main - Processing parse [Add 1 to every age] using module [SQL]
+INFO  1464732492 SQL - 3 rows affected.
+INFO  1464732492 Main - Processing output [Output to file] using module [CSV]
+INFO  1464732492 CSV - Wrote 143 bytes.
+INFO  1464732492 Main - Processing output [Show results to the screen] using module [screen]
+INFO  1464732492 Main - Finished parsing. Total run time: 0s
+===== 2016-05-31 22:17:08
+INFO  1464733028 Main - Processing input [Make a table] using module [inittable]
+INFO  1464733028 Main - Processing input [Read sample data] using module [CSV]
+INFO  1464733028 CSV - Read 4 columns, 3 rows.
+INFO  1464733028 Main - Processing input [List files] using module [files]
+===== 2016-05-31 22:17:24
+INFO  1464733044 Main - Processing input [Make a table] using module [inittable]
+INFO  1464733044 Main - Processing input [Read sample data] using module [CSV]
+INFO  1464733044 CSV - Read 4 columns, 3 rows.
+INFO  1464733045 Main - Processing input [List files] using module [files]
+ERROR 1464733045 Files - 'port'
+INFO  1464733045 Main - Processing parse [Add 1 to every age] using module [SQL]
+INFO  1464733045 SQL - 3 rows affected.
+INFO  1464733045 Main - Processing output [Output to file] using module [CSV]
+INFO  1464733045 CSV - Wrote 143 bytes.
+INFO  1464733045 Main - Processing output [Show results to the screen] using module [screen]
+ERROR 1464733045 Screen - no such table: files
+INFO  1464733045 Main - Finished parsing. Total run time: 1s
+===== 2016-05-31 22:18:04
+INFO  1464733084 Main - Processing input [Make a table] using module [inittable]
+INFO  1464733084 Main - Processing input [Read sample data] using module [CSV]
+INFO  1464733084 CSV - Read 4 columns, 3 rows.
+INFO  1464733084 Main - Processing input [List files] using module [files]
+ERROR 1464733084 Files - 'port'
+INFO  1464733084 Main - Processing parse [Add 1 to every age] using module [SQL]
+INFO  1464733084 SQL - 3 rows affected.
+INFO  1464733084 Main - Processing output [Output to file] using module [CSV]
+INFO  1464733084 CSV - Wrote 143 bytes.
+INFO  1464733084 Main - Processing output [Show results to the screen] using module [screen]
+ERROR 1464733084 Screen - no such table: tmpfiles
+INFO  1464733084 Main - Finished parsing. Total run time: 0s
+===== 2016-05-31 22:18:27
+INFO  1464733107 Main - Processing input [Make a table] using module [inittable]
+INFO  1464733107 Main - Processing input [Read sample data] using module [CSV]
+INFO  1464733107 CSV - Read 4 columns, 3 rows.
+INFO  1464733107 Main - Processing input [List files] using module [files]
+INFO  1464733107 Files - Read 10 files.
+INFO  1464733107 Main - Processing parse [Add 1 to every age] using module [SQL]
+INFO  1464733107 SQL - 3 rows affected.
+INFO  1464733107 Main - Processing output [Output to file] using module [CSV]
+INFO  1464733107 CSV - Wrote 143 bytes.
+INFO  1464733107 Main - Processing output [Show results to the screen] using module [screen]
+INFO  1464733107 Main - Finished parsing. Total run time: 0s
+===== 2016-05-31 22:18:49
+INFO  1464733129 Main - Processing input [Make a table] using module [inittable]
+INFO  1464733129 Main - Processing input [Read sample data] using module [CSV]
+INFO  1464733129 CSV - Read 4 columns, 3 rows.
+INFO  1464733129 Main - Processing input [List files] using module [files]
+ERROR 1464733130 Files - Incorrect number of bindings supplied. The current statement uses 1, and there are 4 supplied.
+INFO  1464733130 Main - Processing parse [Add 1 to every age] using module [SQL]
+INFO  1464733130 SQL - 3 rows affected.
+INFO  1464733130 Main - Processing output [Output to file] using module [CSV]
+INFO  1464733130 CSV - Wrote 143 bytes.
+INFO  1464733130 Main - Processing output [Show results to the screen] using module [screen]
+INFO  1464733130 Main - Finished parsing. Total run time: 1s
+===== 2016-05-31 22:18:56
+INFO  1464733136 Main - Processing input [Make a table] using module [inittable]
+INFO  1464733136 Main - Processing input [Read sample data] using module [CSV]
+INFO  1464733136 CSV - Read 4 columns, 3 rows.
+INFO  1464733136 Main - Processing input [List files] using module [files]
+INFO  1464733136 Files - Read 10 files.
+INFO  1464733136 Main - Processing parse [Add 1 to every age] using module [SQL]
+INFO  1464733137 SQL - 3 rows affected.
+INFO  1464733137 Main - Processing output [Output to file] using module [CSV]
+INFO  1464733137 CSV - Wrote 143 bytes.
+INFO  1464733137 Main - Processing output [Show results to the screen] using module [screen]
+INFO  1464733137 Main - Finished parsing. Total run time: 1s
+===== 2016-05-31 22:19:02
+INFO  1464733142 Main - Processing input [Make a table] using module [inittable]
+INFO  1464733142 Main - Processing input [Read sample data] using module [CSV]
+INFO  1464733142 CSV - Read 4 columns, 3 rows.
+INFO  1464733142 Main - Processing input [List files] using module [files]
+INFO  1464733142 Files - Read 10 files.
+INFO  1464733142 Main - Processing parse [Add 1 to every age] using module [SQL]
+INFO  1464733143 SQL - 3 rows affected.
+INFO  1464733143 Main - Processing output [Output to file] using module [CSV]
+INFO  1464733143 CSV - Wrote 143 bytes.
+INFO  1464733143 Main - Processing output [Show results to the screen] using module [screen]
+INFO  1464733143 Main - Finished parsing. Total run time: 1s
+===== 2016-05-31 22:19:20
+INFO  1464733160 Main - Processing input [Make a table] using module [inittable]
+INFO  1464733161 Main - Processing input [Read sample data] using module [CSV]
+INFO  1464733161 CSV - Read 4 columns, 3 rows.
+INFO  1464733161 Main - Processing input [List files] using module [files]
+INFO  1464733161 Files - Read 10 files.
+INFO  1464733161 Main - Processing parse [Add 1 to every age] using module [SQL]
+INFO  1464733161 SQL - 3 rows affected.
+INFO  1464733161 Main - Processing output [Output to file] using module [CSV]
+INFO  1464733161 CSV - Wrote 143 bytes.
+INFO  1464733161 Main - Processing output [Show results to the screen] using module [screen]
+INFO  1464733161 Main - Finished parsing. Total run time: 1s
+===== 2016-05-31 22:19:32
+INFO  1464733172 Main - Processing input [Make a table] using module [inittable]
+INFO  1464733173 Main - Processing input [Read sample data] using module [CSV]
+INFO  1464733173 CSV - Read 4 columns, 3 rows.
+INFO  1464733173 Main - Processing input [List files] using module [files]
+ERROR 1464733173 Files - [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'C:\temp'
+INFO  1464733173 Main - Processing parse [Add 1 to every age] using module [SQL]
+INFO  1464733173 SQL - 3 rows affected.
+INFO  1464733173 Main - Processing output [Output to file] using module [CSV]
+INFO  1464733173 CSV - Wrote 143 bytes.
+INFO  1464733173 Main - Processing output [Show results to the screen] using module [screen]
+INFO  1464733173 Main - Finished parsing. Total run time: 1s
+===== 2016-05-31 22:19:53
+INFO  1464733193 Main - Processing input [Make a table] using module [inittable]
+INFO  1464733193 Main - Processing input [Read sample data] using module [CSV]
+INFO  1464733193 CSV - Read 4 columns, 3 rows.
+INFO  1464733193 Main - Processing input [List files] using module [files]
+INFO  1464733193 Files - Read 10 files.
+INFO  1464733193 Main - Processing parse [Add 1 to every age] using module [SQL]
+INFO  1464733193 SQL - 3 rows affected.
+INFO  1464733193 Main - Processing output [Output to file] using module [CSV]
+INFO  1464733193 CSV - Wrote 143 bytes.
+INFO  1464733193 Main - Processing output [Show results to the screen] using module [screen]
+INFO  1464733194 Main - Finished parsing. Total run time: 1s
+===== 2016-05-31 22:21:03
+INFO  1464733263 Main - Processing input [Make a table] using module [inittable]
+INFO  1464733263 Main - Processing input [Read sample data] using module [CSV]
+INFO  1464733263 CSV - Read 4 columns, 3 rows.
+INFO  1464733263 Main - Processing input [List files] using module [files]
+ERROR 1464733263 Files - table tmpfiles has no column named size
+INFO  1464733263 Main - Processing parse [Add 1 to every age] using module [SQL]
+INFO  1464733263 SQL - 3 rows affected.
+INFO  1464733263 Main - Processing output [Output to file] using module [CSV]
+INFO  1464733263 CSV - Wrote 143 bytes.
+INFO  1464733263 Main - Processing output [Show results to the screen] using module [screen]
+INFO  1464733263 Main - Finished parsing. Total run time: 0s
+===== 2016-05-31 22:21:36
+INFO  1464733296 Main - Processing input [Make a table] using module [inittable]
+INFO  1464733296 Main - Processing input [Read sample data] using module [CSV]
+INFO  1464733296 CSV - Read 4 columns, 3 rows.
+INFO  1464733296 Main - Processing input [List files] using module [files]
+ERROR 1464733296 Files - 1 values for 2 columns
+INFO  1464733296 Main - Processing parse [Add 1 to every age] using module [SQL]
+INFO  1464733297 SQL - 3 rows affected.
+INFO  1464733297 Main - Processing output [Output to file] using module [CSV]
+INFO  1464733297 CSV - Wrote 143 bytes.
+INFO  1464733297 Main - Processing output [Show results to the screen] using module [screen]
+INFO  1464733297 Main - Finished parsing. Total run time: 1s
+===== 2016-05-31 22:22:04
+INFO  1464733324 Main - Processing input [Make a table] using module [inittable]
+INFO  1464733324 Main - Processing input [Read sample data] using module [CSV]
+INFO  1464733324 CSV - Read 4 columns, 3 rows.
+INFO  1464733324 Main - Processing input [List files] using module [files]
+INFO  1464733324 Files - Read 10 files.
+INFO  1464733324 Main - Processing parse [Add 1 to every age] using module [SQL]
+INFO  1464733324 SQL - 3 rows affected.
+INFO  1464733324 Main - Processing output [Output to file] using module [CSV]
+INFO  1464733324 CSV - Wrote 143 bytes.
+INFO  1464733324 Main - Processing output [Show results to the screen] using module [screen]
+INFO  1464733324 Main - Finished parsing. Total run time: 0s
+===== 2016-05-31 22:23:02
+INFO  1464733382 Main - Processing input [Make a table] using module [inittable]
+INFO  1464733382 Main - Processing input [Read sample data] using module [CSV]
+INFO  1464733382 CSV - Read 4 columns, 3 rows.
+INFO  1464733382 Main - Processing input [List files] using module [files]
+ERROR 1464733382 Files - [WinError 2] The system cannot find the file specified: 'output.csv'
+INFO  1464733382 Main - Processing parse [Add 1 to every age] using module [SQL]
+INFO  1464733383 SQL - 3 rows affected.
+INFO  1464733383 Main - Processing output [Output to file] using module [CSV]
+INFO  1464733383 CSV - Wrote 143 bytes.
+INFO  1464733383 Main - Processing output [Show results to the screen] using module [screen]
+INFO  1464733383 Main - Finished parsing. Total run time: 1s
+===== 2016-05-31 22:23:56
+INFO  1464733436 Main - Processing input [Make a table] using module [inittable]
+INFO  1464733436 Main - Processing input [Read sample data] using module [CSV]
+INFO  1464733436 CSV - Read 4 columns, 3 rows.
+INFO  1464733436 Main - Processing input [List files] using module [files]
+INFO  1464733436 Files - Read 2 files.
+INFO  1464733436 Main - Processing parse [Add 1 to every age] using module [SQL]
+INFO  1464733436 SQL - 3 rows affected.
+INFO  1464733436 Main - Processing output [Output to file] using module [CSV]
+INFO  1464733436 CSV - Wrote 143 bytes.
+INFO  1464733436 Main - Processing output [Show results to the screen] using module [screen]
+INFO  1464733436 Main - Finished parsing. Total run time: 0s
+===== 2016-05-31 22:24:35
+INFO  1464733475 Main - Processing input [Make a table] using module [inittable]
+INFO  1464733476 Main - Processing input [Read sample data] using module [CSV]
+INFO  1464733476 CSV - Read 4 columns, 3 rows.
+INFO  1464733476 Main - Processing input [List files] using module [files]
+INFO  1464733476 Files - Read 979 files.
+INFO  1464733476 Main - Processing parse [Add 1 to every age] using module [SQL]
+INFO  1464733476 SQL - 3 rows affected.
+INFO  1464733476 Main - Processing output [Output to file] using module [CSV]
+INFO  1464733476 CSV - Wrote 143 bytes.
+INFO  1464733476 Main - Processing output [Show results to the screen] using module [screen]
+INFO  1464733476 Main - Finished parsing. Total run time: 1s

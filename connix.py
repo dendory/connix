@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Connix - (C) 2016 Patrick Lambert - Provided under the MIT license
 # Main utility
-from modules import util, config, csv, inittable, sql, odbc, ldap, screen
+from modules import util, config, csv, inittable, sql, odbc, ldap, screen, files
 import sqlite3
 import sys
 
@@ -56,6 +56,9 @@ for x in input:
 			util.exit(cfg, 1)
 	elif x['module'].lower() == 'odbc':
 		if not odbc.input(cfg, x) and cfg['onerror']:
+			util.exit(cfg, 1)
+	elif x['module'].lower() == 'files':
+		if not files.input(cfg, x) and cfg['onerror']:
 			util.exit(cfg, 1)
 	elif x['module'].lower() == 'ldap':
 		if not ldap.input(cfg, x) and cfg['onerror']:
