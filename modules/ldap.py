@@ -13,8 +13,8 @@ def input(cfg = {}, x = {}):
 	try:
 		util.debug(cfg, "Connecting to [" + x['server'] + ":" + str(x['port']) + "] and saving data to table [" + table + "]")
 		s = ldap3.Server(x['server'], port = x['port']);
-		if 'username' in x and 'password' in x: # Do a simple bind if a username and password were provided
-			c = ldap3.Connection(s, auto_referrals = False, authentication = 'SIMPLE', user = x['username'], password = x['password']);
+		if 'credential' in x: # Do a simple bind if a username and password were provided
+			c = ldap3.Connection(s, auto_referrals = False, authentication = 'SIMPLE', user = cfg['creds'][x['credential']]['username'], password = cfg['creds'][x['credential']]['password']);
 			c.open()
 			c.bind()
 		else:

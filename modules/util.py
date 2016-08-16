@@ -46,3 +46,17 @@ def unixtime():
 def datetime():
 	return time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())
 
+# Return the hash of a file
+def hashfile(filename):
+	import hashlib
+	try:
+		BLOCKSIZE = 65536
+		hasher = hashlib.md5()
+		with open(filename, "rb") as f:
+			buf = f.read(BLOCKSIZE)
+			while len(buf) > 0:
+				hasher.update(buf)
+				buf = f.read(BLOCKSIZE)
+		return str(hasher.hexdigest())
+	except:
+		return ""

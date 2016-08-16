@@ -13,18 +13,19 @@ def input(cfg = {}, x = {}):
 		util.debug(cfg, "Mode [" + x['mode'] + "] on table [" + table + "]")
 		coldef = ""
 		found = False
-		for col in x['columns']: # Iterate column config and create column definition
-			if found:
-				coldef += ", "
-			found = True
-			coldef += col['name']
-			if col['type'] == "number":
-				coldef += " INT"
-			else:
-				coldef += " TEXT"
-			if col['primary']:
-				coldef += " PRIMARY KEY"
-		util.debug(cfg, "Column definition: " + coldef)
+		if 'columns' in x:
+			for col in x['columns']: # Iterate column config and create column definition
+				if found:
+					coldef += ", "
+				found = True
+				coldef += col['name']
+				if col['type'] == "number":
+					coldef += " INT"
+				else:
+					coldef += " TEXT"
+				if col['primary']:
+					coldef += " PRIMARY KEY"
+			util.debug(cfg, "Column definition: " + coldef)
 		try:
 			cfg['db'].execute("SELECT 1 FROM " + table) # If table does not exist, break from 'try'
 			if x['mode'] == 'replace' or x['mode'] == 'remove': # If mode is 'replace' or 'remove', drop the table

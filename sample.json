@@ -1,0 +1,71 @@
+{
+	"debug": false,
+	"log": "connix.log",
+	"db": "connix.db",
+	"onerror": "continue",
+	"input": [
+		{
+			"id": "Make a table",
+			"module": "inittable",
+			"mode": "replace",
+			"table": "emails",
+			"columns": [
+				{
+					"name": "username",
+					"type": "text",
+					"primary": true
+				},
+				{
+					"name": "name",
+					"type": "text",
+					"primary": false
+				},
+				{
+					"name": "email",
+					"type": "text",
+					"primary": false
+				},
+				{
+					"name": "age",
+					"type": "number",
+					"primary": false
+				}
+			]
+		},
+		{
+			"id": "Read sample data",
+			"module": "CSV",
+			"file": "data/sample.csv",
+			"table": "emails",
+			"mode": "merge",
+			"delimiter": ","
+		},
+		{
+			"id": "List files",
+			"module": "files",
+			"folder": ".",
+			"mode": "clear",
+			"table": "tmpfiles"
+		}
+	],
+	"parse": [
+		{
+			"id": "Add 1 to every age",
+			"module": "SQL",
+			"query": "UPDATE emails SET age = age + 1;"
+		}
+	],
+	"output": [
+		{
+			"id": "Output to file",
+			"module": "CSV",
+			"file": "data/output.csv",
+			"table": "emails"
+		},
+		{
+			"id": "Show results to the screen",
+			"module": "screen",
+			"table": "tmpfiles"
+		}
+	]
+}
