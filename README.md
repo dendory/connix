@@ -8,7 +8,7 @@ Connix is a cross-platform data manipulation utility. It has three phases:
 
 This utility can be used to import data from a large array of inputs, parse and interact with the data in a number of ways, then export the resulting data to a large number of outputs. All of the commands to tell Connix what to do are stored in a single JSON config file.
 
-The current version is: **0.0.2**
+The current version is: **0.0.3**
 
 ## Installation
 
