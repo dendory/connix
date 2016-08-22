@@ -10,3 +10,15 @@ INFO  1471361494 Main - Processing output [Output to file] using module [CSV]
 INFO  1471361494 CSV - Wrote 143 bytes.
 INFO  1471361494 Main - Processing output [Show results to the screen] using module [screen]
 INFO  1471361494 Main - Finished parsing. Total run time: 0s
+===== 2016-08-22 13:43:05
+INFO  1471873385 Main - Processing input [Make a table] using module [inittable]
+INFO  1471873385 Main - Processing input [Read sample data] using module [CSV]
+INFO  1471873385 CSV - Read 4 columns, 3 rows.
+INFO  1471873385 Main - Processing input [List files] using module [files]
+INFO  1471873385 Files - Read 10 files.
+INFO  1471873385 Main - Processing parse [Add 1 to every age] using module [SQL]
+INFO  1471873385 SQL - 3 rows affected.
+INFO  1471873385 Main - Processing output [Output to file] using module [CSV]
+INFO  1471873385 CSV - Wrote 143 bytes.
+INFO  1471873385 Main - Processing output [Show results to the screen] using module [screen]
+INFO  1471873385 Main - Finished parsing. Total run time: 0s

@@ -34,7 +34,7 @@ This module will create, replace or remove tables for use with other modules.
 
 #### input
 
-* `id: <name>` This is a unique name for the input.
+* `id: <name>` This is a unique name for this input.
 * `module: "inittable"` The module name to call.
 * `table: <table name>` The name of the table to write data to. Optional, a random unique name will be used if not specified.
 * `mode: [create|replace|remove]` The mode of operation. The module will **create** a table or abort, **replace** a table if it already exists or create it if not, or **remove** a table.
@@ -46,7 +46,7 @@ The CSV module can read and write plain text CSV files. These files must have a 
 
 #### input
 
-* `id: <name>` This is a unique name for the input.
+* `id: <name>` This is a unique name for this input.
 * `module: "csv"` The module name to call.
 * `file: <filename>` The CSV file to read.
 * `table: <table name>` The name of the table where to store data. If it doesn't exist then it will be created on the fly. This parameter is optional, and a random unique name will be selected if not specified.
@@ -55,7 +55,7 @@ The CSV module can read and write plain text CSV files. These files must have a 
 
 #### output
 
-* `id: <name>` This is a unique name for the output.
+* `id: <name>` This is a unique name for this output.
 * `module: "csv"` The module name to call.
 * `file: <filename>` The CSV file to write to. Optional, if unspecified a random unique file name is selected.
 * `table: <table name>` The table containing the data to write.
@@ -66,7 +66,7 @@ This module allows you to run SQL statements against your data.
 
 #### parse
 
-* `id: <name>` This is a unique name for the input.
+* `id: <name>` This is a unique name for this parse.
 * `module: "sql"` The module name to call.
 * `query: <sql statement>` A valid SQL statement to execute on the database.
 * `type: [select|execute]` Whether the query should return data or not. Optional
@@ -79,7 +79,7 @@ This module allows you to connect to a backend database using ODBC. Requires the
 
 #### input
 
-* `id: <name>` This is a unique name for the input.
+* `id: <name>` This is a unique name for this input.
 * `module: "odbc"` The module name to call.
 * `dsn: <connection string>` A valid connection string to connect to a database server. Example: DRIVER={SQL Server};SERVER=10.0.0.1;DATABASE=test;UID=user;PWD=pass
 * `query: <sql statement>` A valid SQL statement to query data over ODBC. Example: SELECT * FROM mytable
@@ -88,7 +88,7 @@ This module allows you to connect to a backend database using ODBC. Requires the
 
 #### output
 
-* `id: <name>` This is a unique name for the input.
+* `id: <name>` This is a unique name for this output.
 * `module: "odbc"` The module name to call.
 * `table: <table name>` The table containing the data to write.
 * `dsn: <connection string>` A valid connection string to connect to a database server. Example: DRIVER={SQL Server};SERVER=10.0.0.1;DATABASE=test;UID=user;PWD=pass
@@ -101,7 +101,7 @@ This module allows you to create an LDAP query and get the resulting data. Requi
 
 #### input
 
-* `id: <name>` This is a unique name for the input.
+* `id: <name>` This is a unique name for this input.
 * `module: "ldap"` The module name to call.
 * `server: <LDAP server>` The LDAP server address.
 * `port: <LDAP port>` The LDAP server port.
@@ -118,8 +118,8 @@ This is a simple module that can be used to display data directly to the standar
 
 #### output
 
-* `id: <name>` This is a unique name for the input.
-* `module: "odbc"` The module name to call.
+* `id: <name>` This is a unique name for this output.
+* `module: "screen"` The module name to call.
 * `table: <table name>` The table containing the data to display.
 
 ### Files
@@ -128,8 +128,21 @@ This module lists files from a folder along with the file size, hash, the create
 
 #### input
 
-* `id: <name>` This is a unique name for the input.
+* `id: <name>` This is a unique name for this input.
 * `module: "files"` The module name to call.
 * `folder: <local path>` The folder to list from.
 * `table: <table name>` The name of the table where to store data. If it doesn't exist then it will be created on the fly. This parameter is optional, and a random unique name will be selected if not specified.
 * `mode: [clear|add|merge]` The mode to use for data when added to an existing table. The module will either **clear** the existing data before insertion, **add** all data to the existing rows, or **merge** rows based on the table's primary key. You should pre-create the table with *inittable* and set a primary key to use *merge*.
+
+### HTML
+
+This module will save a table in an HTML file, with optional header/footer. 
+
+#### output
+
+* `id: <name>` This is a unique name for this output.
+* `module: "html"` The module name to call.
+* `table: <table name>` The table containing the data to save.
+* `file: <filename>` The HTML file to write to. Optional, if unspecified a random unique file name is selected.
+* `headers: [true|false]` Add headers and CSS to make the table look prettier with built-in paging and search. Optional, if defaults to false.
+* `htmlid: <id>` Value to use for the table ID tag. Must contain only letters and numbers, no space. Optional, defaults to a random unique value.

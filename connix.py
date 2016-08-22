@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Connix - (C) 2016 Patrick Lambert - Provided under the MIT license
 # Main utility
-from modules import util, config, csv, inittable, sql, odbc, ldap, screen, files
+from modules import util, config, csv, inittable, sql, odbc, ldap, screen, files, html
 import sqlite3
 import sys
 
@@ -94,6 +94,9 @@ for x in output:
 			util.exit(cfg, 1)
 	elif x['module'].lower() == 'screen': # Show contents of a table on the screen
 		if not screen.output(cfg, x) and cfg['onerror']:
+			util.exit(cfg, 1)
+	elif x['module'].lower() == 'html': # Save contents of a table in an HTML file
+		if not html.output(cfg, x) and cfg['onerror']:
 			util.exit(cfg, 1)
 	else:
 		util.err(cfg, "Unknown module name.")
