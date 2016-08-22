@@ -16,7 +16,9 @@ def input(cfg = {}, x = {}):
 		if 'credential' in x: # Do a simple bind if a username and password were provided
 			c = ldap3.Connection(s, auto_referrals = False, authentication = 'SIMPLE', user = cfg['creds'][x['credential']]['username'], password = cfg['creds'][x['credential']]['password']);
 			c.open()
-			c.bind()
+			if not c.bind():
+				util.err(cfg, "Authentication failed.")
+				return False
 		else:
 			c = ldap3.Connection(s, auto_referrals = False);
 			c.open()
