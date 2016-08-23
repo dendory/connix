@@ -7,6 +7,9 @@ import sys
 def input(cfg = {}, x = {}):
 	import ldap3
 	cfg['module'] = "LDAP"
+	dn = "dn"
+	if 'index' in x:
+		dn = x['index']
 	table = util.guid("tmp_")
 	if 'table' in x:
 		table = x['table']
@@ -23,18 +26,27 @@ def input(cfg = {}, x = {}):
 			c = ldap3.Connection(s, auto_referrals = False);
 			c.open()
 		util.debug(cfg, str(c))
-		attrs = []
+		attrs = [dn]
 		if 'attributes' in x: # Ask for every requested attribute
 			for attr in x['attributes']:
 				attrs.append(attr['attribute'])
+		util.debug(cfg, "Querying for attributes: " + str(attrs))
 		c.search(x['basedn'], x['filter'], ldap3.SEARCH_SCOPE_WHOLE_SUBTREE, attributes = attrs)
-		tmp = "CREATE TABLE " + table + " (dn TEXT" # Create statement to be crafted
-		qhs = "dn" # List of headers
-		qms = "?" # Question marks for the insert statement
+		tmp = "CREATE TABLE " + table + " ("  # Create statement to be crafted
+		qhs = "" # List of headers
+		qms = "" # Question marks for the insert statement
+		found = False
+		colcount = 0
 		for header in attrs: # Go through headers and craft create/insert statement
-			tmp += ", " + header + " TEXT"
-			qms += ", ?"
-			qhs += ", " + header
+			if found:
+				tmp += ", "
+				qms += ", "
+				qhs += ", "
+			found = True
+			tmp += header + " TEXT"
+			qms += "?"
+			qhs += header
+			colcount += 1
 		tmp += ");"
 		try:
 			cfg['db'].execute("SELECT 1 FROM " + table) # If table does not exist, break from 'try' and create it
@@ -49,14 +61,16 @@ def input(cfg = {}, x = {}):
 		rowcount = 0
 		for row in c.response:
 			rowcount += 1
-			res = [row['dn']]
+			res = []
+			if dn == "dn":
+				res.append(row['dn'])
 			for attr in attrs:
 				if attr in row['attributes']:
 					if type(row['attributes'][attr]) is list: # Check if returned attribute is a multi-attribute
 						res.append(str(row['attributes'][attr][0]))
 					else:
 						res.append(str(row['attributes'][attr]))
-				else: # The attribute does not exist, put an empty string
+				elif attr != "dn": # The attribute does not exist, and it isnt 'dn', put an empty string
 					res.append("")
 			stmt = "INSERT INTO " + table + " (" + qhs + ") VALUES (" + qms + ")"
 			if 'mode' in x:

@@ -8,17 +8,17 @@ def output(cfg = {}, x = {}):
 	cfg['module'] = "HTML"
 	try:
 		numrow = 0
-		filename = util.guid("tmp_") + ".html"
+		filename = util.guid("tmp_") + ".html" # File name to write HTML to
 		if 'file' in x:
 			filename = x['file']
-		htmlid = util.guid()
+		htmlid = util.guid() # ID for the table
 		if 'htmlid' in x:
 			htmlid = x['htmlid']
 		util.debug(cfg, "Saving table [" + x['table'] + "] to HTML file [" + filename + "]")
 		sql = cfg['db'].cursor()
 		sql.execute("SELECT * FROM " + x['table'])
 		f = open(filename, "w", newline='')
-		if 'headers' in x and x['headers']:
+		if 'headers' in x and x['headers']: # Craft headers using Datatables, JQuery and Bootstrap
 			f.write("<HTML><HEAD>\n")
 			f.write("<LINK REL='stylesheet' TYPE='text/css' HREF='//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'/>\n")
 			f.write("<LINK REL='stylesheet' TYPE='text/css' HREF='//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css'/>\n")
@@ -31,17 +31,17 @@ def output(cfg = {}, x = {}):
 			f.write("<DIV CLASS='container'>\n")
 			f.write("<DIV CLASS='page-header'><H1>" + x['table'] + "</H1></DIV>\n")
 		f.write("<TABLE ID='" + htmlid + "' CLASS='table'><THEAD>\n<TR>")
-		for r in sql.description:
+		for r in sql.description: # Write HTML table headers based on SQL table headers
 			f.write("<TH>" + str(r[0]) + "</TH>")
 		f.write("</TR>\n</THEAD><TBODY>\n")
-		for row in sql.fetchall():
-			numrow = numrow + 1
+		for row in sql.fetchall(): # Iterate over rows
+			numrow += 1
 			f.write("<TR>")
-			for r in row:
+			for r in row: # Write each cell
 				f.write("<TD>" + str(r) + "</TD>")
 			f.write("</TR>\n")
 		f.write("</TBODY></TABLE>\n")
-		if 'headers' in x and x['headers']:
+		if 'headers' in x and x['headers']: # Write bottom of the page
 			f.write("<SCRIPT TYPE='text/javascript'>$(document).ready(function() { $('#" + htmlid + "').DataTable(); } );</SCRIPT>\n")
 			f.write("</DIV>\n")
 			f.write("</BODY></HTML>\n")		

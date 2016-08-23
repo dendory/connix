@@ -108,7 +108,8 @@ This module allows you to create an LDAP query and get the resulting data. Requi
 * `credential: <credential id>` Credentials to use for login (requires username/password, for Active Directory use DOMAIN\\userid). Optional.
 * `basedn: <base dn>` The base dn to use for the query. Example: CN=Computers,DC=mydomain,DC=com
 * `filter: <query filter>` The types of objects to return. Example: (&(objectCategory=computer))
-* `attributes: [ { attribute: <attribute> } ]` Object attributes to retrieve. Note that multi-value attributes are not supported, only the first entry will be pulled in those cases.
+* `index: <index attribute>` Unique attribute defining each entry. Optional, defaults to 'dn'.
+* `attributes: [ { attribute: <attribute> } ]` Additional object attributes to retrieve. Note that multi-value attributes are not supported, only the first entry will be pulled in those cases.
 * `table: <table name>` The name of the table where to store data. If it doesn't exist then it will be created on the fly. This parameter is optional, and a random unique name will be selected if not specified.
 * `mode: [clear|add|merge]` The mode to use for data when added to an existing table. The module will either **clear** the existing data before insertion, **add** all data to the existing rows, or **merge** rows based on the table's primary key. You should pre-create the table with *inittable* and set a primary key to use *merge*.
 
@@ -146,3 +147,18 @@ This module will save a table in an HTML file, with optional header/footer.
 * `file: <filename>` The HTML file to write to. Optional, if unspecified a random unique file name is selected.
 * `headers: [true|false]` Add headers and CSS to make the table look prettier with built-in paging and search. Optional, if defaults to false.
 * `htmlid: <id>` Value to use for the table ID tag. Must contain only letters and numbers, no space. Optional, defaults to a random unique value.
+
+### Match
+
+This module will copy rows from one table to another when the specified column matches (or doesn't match) a specific string or regular expression.
+
+#### parse
+
+* `id: <name>` This is a unique name for this parse.
+* `module: "match"` The module name to call.
+* `table: <table name>` The name of the table to read data from.
+* `col: <column name>` The name of the column to match against.
+* `match: <string>` The string that must be contained (or missing) from each row.
+* `inverse: [true|false]` Whether the match string should be missing rather than present. Optional, defaults to false.
+* `newtable: <table name>` The name of the table to write resulting rows to.
+* `mode: [clear|add|merge]` The mode to use for data when added to an existing table. The module will either **clear** the existing data before insertion, **add** all data to the existing rows, or **merge** rows based on the table's primary key. You should pre-create the table with *inittable* and set a primary key to use *merge*.

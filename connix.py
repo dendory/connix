@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # Connix - (C) 2016 Patrick Lambert - Provided under the MIT license
 # Main utility
-from modules import util, config, csv, inittable, sql, odbc, ldap, screen, files, html
+from modules import util, config, csv, inittable, sql, odbc, ldap, screen, files, html, match
 import sqlite3
 import sys
 
@@ -70,7 +70,9 @@ for x in input:
 		if not inittable.input(cfg, x) and cfg['onerror']:
 			util.exit(cfg, 1)
 	else:
-		util.err(cfg, "Unknown module name.")
+		util.err(cfg, "Unknown module name: " + x['module'].lower())
+		if cfg['onerror']:
+			util.exit(cfg, 1)
 
 # Process parses
 for x in parse:
@@ -79,8 +81,13 @@ for x in parse:
 	if x['module'].lower() == 'sql': # Run arbitrary SQL query on the database
 		if not sql.parse(cfg, x) and cfg['onerror']:
 			util.exit(cfg, 1)
+	elif x['module'].lower() == 'match': # Match row entries in the database
+		if not match.parse(cfg, x) and cfg['onerror']:
+			util.exit(cfg, 1)
 	else:
-		util.err(cfg, "Unknown module name.")
+		util.err(cfg, "Unknown module name: " + x['module'].lower())
+		if cfg['onerror']:
+			util.exit(cfg, 1)
 
 # Process outputs
 for x in output:
@@ -99,7 +106,9 @@ for x in output:
 		if not html.output(cfg, x) and cfg['onerror']:
 			util.exit(cfg, 1)
 	else:
-		util.err(cfg, "Unknown module name.")
+		util.err(cfg, "Unknown module name: " + x['module'].lower())
+		if cfg['onerror']:
+			util.exit(cfg, 1)
 
 # End
 cfg['module'] = "Main" # Reset module to main and exit

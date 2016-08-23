@@ -7,20 +7,20 @@ import string
 
 # Print an error and quit
 def err(cfg, msg):
-	print("* Error: " + msg)
+	print("* ERROR " + str(unixtime()) + " " + cfg['module'] + " - " + msg)
 	if cfg['log']:
 		cfg['log'].write("ERROR " + str(unixtime()) + " " + cfg['module'] + " - " + msg + "\n")
 
 # Print a message to the screen
 def info(cfg, msg):
-	print("* " + msg)
+	print("INFO  " + str(unixtime()) + " " + cfg['module'] + " - " + msg)
 	if cfg['log']:
 		cfg['log'].write("INFO  " + str(unixtime()) + " " + cfg['module'] + " - " + msg + "\n")
 
 # Print a message to the screen
 def debug(cfg, msg):
 	if cfg['debug']:
-		print("* Debug: " + msg)
+		print("DEBUG " + str(unixtime()) + " " + cfg['module'] + " - " + msg)
 		if cfg['log']:
 			cfg['log'].write("DEBUG " + str(unixtime()) + " " + cfg['module'] + " - " + msg + "\n")
 
