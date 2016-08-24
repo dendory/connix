@@ -1,4 +1,6 @@
-# Connix
+# Connix - Python cross-platform data manipulation utility
+
+## About
 
 Connix is a cross-platform data manipulation utility. It has three phases:
 
@@ -8,15 +10,12 @@ Connix is a cross-platform data manipulation utility. It has three phases:
 
 This utility can be used to import data from a large array of inputs, parse and interact with the data in a number of ways, then export the resulting data to a large number of outputs. All of the commands to tell Connix what to do are stored in a single JSON config file.
 
-The current version is: **0.0.3**
-
-## Installation
-
-Install Python 3.x, then download and extract the Connix ZIP file. To run, type `python connix.py`. You can also specify a config file with `python connix.py config.json`. It should work fine on Linux and Windows.
+* Download:	[connix.zip](connix.zip)
+* Source:	[https://github.com/dendory/connix](https://github.com/dendory/connix)
 
 ## Configuration
 
-Connix reads from the config file you specify, or `connix.cfg` by default. The global configuration values are added to the top of the config file, and not for a specific module.
+Connix reads from the config file you specify, or `sample.json` by default. The global configuration values are added to the top of the config file, and not for a specific module.
 
 * `debug: [true|false]` Whether to display debugging messages or not.
 * `log: <filename>` Where to write the log.
