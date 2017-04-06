@@ -1,4 +1,5 @@
 from . import connix
+import time
 
 if __name__ == '__main__':
 	""" If called directly, run through a number of sanity tests.

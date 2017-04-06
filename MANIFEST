@@ -3,3 +3,5 @@ README.txt
 setup.cfg
 setup.py
 connix/__init__.py
+connix/__main__.py
+connix/connix.py
