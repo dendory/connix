@@ -1,11 +1,11 @@
-Help on module util:
+Help on module connix:
 
 NAME
-    util
+    connix
 
 DESCRIPTION
-    # Random utilities - (C) 2017 Patrick Lambert - http://dendory.net
-    # Provided under the MIT License
+    # Connix is a general purpose Python 3.x library that contains a lot of commonly done operations inside of a single package.
+    # (C) 2017 Patrick Lambert - http://dendory.net - Provided under the MIT License
 
 FUNCTIONS
     alphanum(text, symbols=False, spaces=False)
@@ -101,7 +101,7 @@ FUNCTIONS
         Load a JSON file.
         @param filename: The filename to load from
     
-    now(timestamp=time.struct_time(tm_year=2017, tm_mon=4, tm_mday=6, tm_hour=16, tm_min=9, tm_sec=44, tm_wday=3, tm_yday=96, tm_isdst=0))
+    now(timestamp=time.struct_time(tm_year=2017, tm_mon=4, tm_mday=6, tm_hour=16, tm_min=17, tm_sec=0, tm_wday=3, tm_yday=96, tm_isdst=0))
         Return the current UTC date and time in a standard format.
         @param timestamp: The time object to use (optional)
     
@@ -121,9 +121,9 @@ FUNCTIONS
         Return the current UTC time in seconds.
 
 DATA
-    __VERSION__ = '2017.3.27'
+    __VERSION__ = '1.0'
 
 FILE
-    /usr/lib/python3.4/site-packages/util.py
+    /home/elfguy/git/connix/connix.py
 
 
