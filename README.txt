@@ -1,7 +1,7 @@
-Help on module connix:
+Help on module connix.connix in connix:
 
 NAME
-    connix
+    connix.connix
 
 DESCRIPTION
     # Connix is a general purpose Python 3.x library that contains a lot of commonly done operations inside of a single package.
@@ -101,7 +101,7 @@ FUNCTIONS
         Load a JSON file.
         @param filename: The filename to load from
     
-    now(timestamp=time.struct_time(tm_year=2017, tm_mon=4, tm_mday=6, tm_hour=16, tm_min=17, tm_sec=0, tm_wday=3, tm_yday=96, tm_isdst=0))
+    now(timestamp=time.struct_time(tm_year=2017, tm_mon=4, tm_mday=6, tm_hour=17, tm_min=35, tm_sec=16, tm_wday=3, tm_yday=96, tm_isdst=0))
         Return the current UTC date and time in a standard format.
         @param timestamp: The time object to use (optional)
     
@@ -121,9 +121,9 @@ FUNCTIONS
         Return the current UTC time in seconds.
 
 DATA
-    __VERSION__ = '1.0'
+    __VERSION__ = '1.3'
 
 FILE
-    /home/elfguy/git/connix/connix.py
+    /usr/lib/python3.4/site-packages/connix/connix.py
 
 
