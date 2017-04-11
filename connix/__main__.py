@@ -37,3 +37,5 @@ if __name__ == '__main__':
 	connix._test("base36", [time.time()])
 	connix._test("is_int", ["23523"])
 	connix._test("is_float", ["364.234"])
+	connix._test("bold", ["This is a bold statement"])
+	connix._test("underline", ["A line underneath"])

@@ -2,7 +2,7 @@
 # Connix is a general purpose Python 3.x library that contains a lot of commonly done operations inside of a single package.
 # (C) 2017 Patrick Lambert - http://dendory.net - Provided under the MIT License
 
-__VERSION__ = "1.3"
+__VERSION__ = "1.4"
 
 import re
 import os
@@ -19,6 +19,18 @@ import hashlib
 import smtplib
 import urllib.parse
 import urllib.request
+
+def bold(text):
+	""" Return the text in bold (Linux console only).
+			@param text: The text to bold
+	"""
+	return "\033[1m" + str(text) + "\033[0m"
+
+def underline(text):
+	""" Return the text in underline (Linux console only).
+			@param text: The text to underline
+	"""
+	return "\033[4m" + str(text) + "\033[0m"
 
 def is_int(number):
 	""" Check if a variable can be cast as an int.
@@ -41,7 +53,7 @@ def is_float(number):
 		return False
 
 def base36(number):
-	""" Converts an integer to a base36 string.
+	""" Converts an integer to an alphanumeric string.
 			@param number: The number to convert
 	"""
 	base36 = ""
