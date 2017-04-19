@@ -2,7 +2,7 @@
 # Connix is a general purpose Python 3.x library that contains a lot of commonly done operations inside of a single package.
 # (C) 2017 Patrick Lambert - http://dendory.net - Provided under the MIT License
 
-__VERSION__ = "1.4"
+__VERSION__ = "1.6"
 
 import re
 import os
@@ -19,6 +19,12 @@ import hashlib
 import smtplib
 import urllib.parse
 import urllib.request
+
+def remove_tags(text):
+	""" Return the text without any HTML tags in it.
+			@param text: The text to process.
+	"""
+	return re.sub('<[^<]+?>', '', text)
 
 def bold(text):
 	""" Return the text in bold (Linux console only).
@@ -140,11 +146,10 @@ def unixtime():
 	"""
 	return int(time.time())
 
-def now(timestamp=time.gmtime()):
+def now():
 	""" Return the current UTC date and time in a standard format.
-			@param timestamp: The time object to use (optional)
 	"""
-	return time.strftime("%Y-%m-%d %H:%M:%S", timestamp)
+	return time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())
 
 def hashfile(filename):
 	""" Return a unique hash for the content of a file.

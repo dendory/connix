@@ -39,3 +39,4 @@ if __name__ == '__main__':
 	connix._test("is_float", ["364.234"])
 	connix._test("bold", ["This is a bold statement"])
 	connix._test("underline", ["A line underneath"])
+	connix._test("remove_tags", ["The prices is <span style=\"color: #888888;\"><strike>$14.99</strike></span><br>"])

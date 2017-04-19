@@ -24,7 +24,7 @@ FUNCTIONS
         @param default: The default answer (optional)
     
     base36(number)
-        Converts an integer to a base36 string.
+        Converts an integer to an alphanumeric string.
         @param number: The number to convert
     
     bold(text)
@@ -105,9 +105,8 @@ FUNCTIONS
         Load a JSON file.
         @param filename: The filename to load from
     
-    now(timestamp=time.struct_time(tm_year=2017, tm_mon=4, tm_mday=11, tm_hour=16, tm_min=52, tm_sec=29, tm_wday=1, tm_yday=101, tm_isdst=0))
+    now()
         Return the current UTC date and time in a standard format.
-        @param timestamp: The time object to use (optional)
     
     remote_ip()
         Return the remote IP of a CGI application.
@@ -115,6 +114,10 @@ FUNCTIONS
     remove_spaces(text)
         Remove extra spaces from a string.
         @param text: The string to process
+    
+    remove_tags(text)
+        Return the text without any HTML tags in it.
+        @param text: The text to process.
     
     save(filename, data)
         Save data in a JSON file.
@@ -129,7 +132,7 @@ FUNCTIONS
         Return the current UTC time in seconds.
 
 DATA
-    __VERSION__ = '1.4'
+    __VERSION__ = '1.6'
 
 FILE
     /home/elfguy/git/connix/connix/connix.py
