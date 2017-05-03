@@ -132,7 +132,7 @@ FUNCTIONS
         Return the current UTC time in seconds.
 
 DATA
-    __VERSION__ = '1.6'
+    __VERSION__ = '1.7'
 
 FILE
     /home/elfguy/git/connix/connix/connix.py

@@ -2,7 +2,7 @@
 # Connix is a general purpose Python 3.x library that contains a lot of commonly done operations inside of a single package.
 # (C) 2017 Patrick Lambert - http://dendory.net - Provided under the MIT License
 
-__VERSION__ = "1.6"
+__VERSION__ = "1.7"
 
 import re
 import os
@@ -19,6 +19,7 @@ import hashlib
 import smtplib
 import urllib.parse
 import urllib.request
+from http.cookiejar import CookieJar
 
 def remove_tags(text):
 	""" Return the text without any HTML tags in it.
@@ -231,7 +232,9 @@ def curl(url, encoding="utf8", cookie=None):
 			'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'
 		}
 	con = urllib.request.Request(url, headers=headers)
-	stream = urllib.request.urlopen(con)
+	cj = CookieJar()
+	opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj))
+	stream = opener.open(con)
 	result = stream.read()
 	charset = stream.info().get_param('charset', encoding)
 	return result.decode(charset)
