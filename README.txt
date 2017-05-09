@@ -130,9 +130,13 @@ FUNCTIONS
     
     unixtime()
         Return the current UTC time in seconds.
+    
+    unixtime2datetime(unixtime)
+        Convert unixtime to a date/time string.
+        @param unixtime: A numeric unixtime value
 
 DATA
-    __VERSION__ = '1.7'
+    __VERSION__ = '1.8'
 
 FILE
     /home/elfguy/git/connix/connix/connix.py

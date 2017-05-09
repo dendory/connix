@@ -2,7 +2,7 @@
 # Connix is a general purpose Python 3.x library that contains a lot of commonly done operations inside of a single package.
 # (C) 2017 Patrick Lambert - http://dendory.net - Provided under the MIT License
 
-__VERSION__ = "1.7"
+__VERSION__ = "1.8"
 
 import re
 import os
@@ -17,6 +17,7 @@ import random
 import fnmatch
 import hashlib
 import smtplib
+import datetime
 import urllib.parse
 import urllib.request
 from http.cookiejar import CookieJar
@@ -146,6 +147,12 @@ def unixtime():
 	""" Return the current UTC time in seconds.
 	"""
 	return int(time.time())
+
+def unixtime2datetime(unixtime):
+	""" Convert unixtime to a date/time string.
+			@param unixtime: A numeric unixtime value
+	"""
+	return datetime.datetime.fromtimestamp(int(unixtime)).strftime('%Y-%m-%d %H:%M:%S')
 
 def now():
 	""" Return the current UTC date and time in a standard format.
