@@ -41,6 +41,11 @@ FUNCTIONS
         @param encoding: The decoding format (optional, defaults to UTF-8)
         @param cookie: The cookie string in format key1=value1;key2=value2 (optional)
     
+    decrypt(key, text)
+        Return the plain text version of an encrypted string.
+        @param key: The key used for the encryption
+        @param text: The cipher text to decrypt
+    
     download(url, localfile)
         Download a file from the Internet.
         @param url: The url of the file
@@ -52,6 +57,11 @@ FUNCTIONS
         @param toaddr: Email of recipient
         @param subject: Subject of the email
         @param body: Body of the email
+    
+    encrypt(key, text)
+        Return an AES encrypted version of the text.
+        @param key: The key to use for the encryption
+        @param text: The string to encrypt
     
     error()
         Return the error message after an exception. Must be used in an 'except' statement.
@@ -117,7 +127,7 @@ FUNCTIONS
     
     remove_tags(text)
         Return the text without any HTML tags in it.
-        @param text: The text to process.
+        @param text: The text to process
     
     save(filename, data)
         Save data in a JSON file.
@@ -136,7 +146,7 @@ FUNCTIONS
         @param unixtime: A numeric unixtime value
 
 DATA
-    __VERSION__ = '1.8'
+    __VERSION__ = '1.9'
 
 FILE
     /home/elfguy/git/connix/connix/connix.py

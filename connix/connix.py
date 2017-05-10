@@ -2,7 +2,7 @@
 # Connix is a general purpose Python 3.x library that contains a lot of commonly done operations inside of a single package.
 # (C) 2017 Patrick Lambert - http://dendory.net - Provided under the MIT License
 
-__VERSION__ = "1.8"
+__VERSION__ = "1.9"
 
 import re
 import os
@@ -12,6 +12,7 @@ import time
 import uuid
 import json
 import types
+import base64
 import string
 import random
 import fnmatch
@@ -20,11 +21,37 @@ import smtplib
 import datetime
 import urllib.parse
 import urllib.request
+from Crypto import Random
+from Crypto.Cipher import AES
 from http.cookiejar import CookieJar
+
+def encrypt(key, text):
+	""" Return an AES encrypted version of the text.
+			@param key: The key to use for the encryption
+			@param text: The string to encrypt
+	"""
+	text = text + (32 - len(text) % 32) * chr(32 - len(text) % 32)
+	iv = Random.new().read(AES.block_size)
+	rawkey = hashlib.sha256(key.encode()).digest()
+	cipher = AES.new(rawkey, AES.MODE_CBC, iv)
+	return base64.b64encode(iv + cipher.encrypt(text)).decode('utf-8')
+
+def decrypt(key, text):
+	""" Return the plain text version of an encrypted string.
+			@param key: The key used for the encryption
+			@param text: The cipher text to decrypt
+	"""
+	enc = base64.b64decode(text.encode())
+	iv = enc[:AES.block_size]
+	rawkey = hashlib.sha256(key.encode()).digest()
+	cipher = AES.new(rawkey, AES.MODE_CBC, iv)
+	result = cipher.decrypt(enc[AES.block_size:])
+	result = result[:-ord(result[len(result)-1:])]
+	return result.decode('utf-8')
 
 def remove_tags(text):
 	""" Return the text without any HTML tags in it.
-			@param text: The text to process.
+			@param text: The text to process
 	"""
 	return re.sub('<[^<]+?>', '', text)
 
