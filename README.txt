@@ -146,7 +146,7 @@ FUNCTIONS
         @param unixtime: A numeric unixtime value
 
 DATA
-    __VERSION__ = '1.9'
+    __VERSION__ = '1.10'
 
 FILE
     /home/elfguy/git/connix/connix/connix.py

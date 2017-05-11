@@ -2,7 +2,7 @@
 # Connix is a general purpose Python 3.x library that contains a lot of commonly done operations inside of a single package.
 # (C) 2017 Patrick Lambert - http://dendory.net - Provided under the MIT License
 
-__VERSION__ = "1.9"
+__VERSION__ = "1.10"
 
 import re
 import os
@@ -21,8 +21,6 @@ import smtplib
 import datetime
 import urllib.parse
 import urllib.request
-from Crypto import Random
-from Crypto.Cipher import AES
 from http.cookiejar import CookieJar
 
 def encrypt(key, text):
@@ -30,6 +28,8 @@ def encrypt(key, text):
 			@param key: The key to use for the encryption
 			@param text: The string to encrypt
 	"""
+	from Crypto import Random
+	from Crypto.Cipher import AES
 	text = text + (32 - len(text) % 32) * chr(32 - len(text) % 32)
 	iv = Random.new().read(AES.block_size)
 	rawkey = hashlib.sha256(key.encode()).digest()
@@ -41,6 +41,8 @@ def decrypt(key, text):
 			@param key: The key used for the encryption
 			@param text: The cipher text to decrypt
 	"""
+	from Crypto import Random
+	from Crypto.Cipher import AES
 	enc = base64.b64decode(text.encode())
 	iv = enc[:AES.block_size]
 	rawkey = hashlib.sha256(key.encode()).digest()
