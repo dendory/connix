@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-# Connix is a general purpose Python 3.x library that contains a lot of commonly done operations inside of a single package.
-# (C) 2017 Patrick Lambert - http://dendory.net - Provided under the MIT License
+""" Connix is a general purpose Python 3.x library that contains a lot of commonly done operations inside of a single package.
+    (C) 2017 Patrick Lambert - http://dendory.net - Provided under the MIT License
+"""
 
-__VERSION__ = "1.10"
+__VERSION__ = "1.11"
 
 import re
 import os
@@ -349,7 +350,7 @@ def _test(func, args):
 	""" Test a function with optional arguments.
 	"""
 	possibles = globals().copy()
-	print("* util." + func + "(" + str(args)[1:-1] + ")")
+	print("* connix." + func + "(" + str(args)[1:-1] + ")")
 	method = possibles.get(func)
 	#print(method.__doc__)
 	try:
