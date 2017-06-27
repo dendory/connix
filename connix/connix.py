@@ -3,7 +3,7 @@
     (C) 2017 Patrick Lambert - http://dendory.net - Provided under the MIT License
 """
 
-__VERSION__ = "1.11"
+__VERSION__ = "1.12"
 
 import re
 import os
@@ -23,6 +23,13 @@ import datetime
 import urllib.parse
 import urllib.request
 from http.cookiejar import CookieJar
+
+def max_len(text, max):
+	""" Return a string capped at a specific length.
+			@param text: The text to return
+			@param max: The maximum length of the string
+	"""
+	return text if len(text)<=max else text[0:max-3]+'...'
 
 def encrypt(key, text):
 	""" Return an AES encrypted version of the text.

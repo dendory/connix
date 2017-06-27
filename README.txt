@@ -115,6 +115,11 @@ FUNCTIONS
         Load a JSON file.
         @param filename: The filename to load from
     
+    max_len(text, max)
+        Return a string capped at a specific length.
+        @param text: The text to return
+        @param max: The maximum length of the string
+    
     now()
         Return the current UTC date and time in a standard format.
     
@@ -146,7 +151,7 @@ FUNCTIONS
         @param unixtime: A numeric unixtime value
 
 DATA
-    __VERSION__ = '1.11'
+    __VERSION__ = '1.12'
 
 FILE
     /home/elfguy/git/connix/connix/connix.py
