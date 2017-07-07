@@ -45,4 +45,4 @@ if __name__ == '__main__':
 	data = connix.encrypt("MySecretKey", "This is a very secret phrase!")
 	connix._test("decrypt", ["MySecretKey", data])
 	connix._test("max_len", ["This text is too long to fit in the max len.", 25])
-
+	connix._test("urlencode", ["Some AD&D, + some quotes?"])

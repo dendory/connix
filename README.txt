@@ -149,9 +149,13 @@ FUNCTIONS
     unixtime2datetime(unixtime)
         Convert unixtime to a date/time string.
         @param unixtime: A numeric unixtime value
+    
+    urlencode(text)
+        Encode text for use on a URL bar.
+        @param text: The text to encode
 
 DATA
-    __VERSION__ = '1.12'
+    __VERSION__ = '1.13'
 
 FILE
     /home/elfguy/git/connix/connix/connix.py

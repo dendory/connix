@@ -3,7 +3,7 @@
     (C) 2017 Patrick Lambert - http://dendory.net - Provided under the MIT License
 """
 
-__VERSION__ = "1.12"
+__VERSION__ = "1.13"
 
 import re
 import os
@@ -23,6 +23,12 @@ import datetime
 import urllib.parse
 import urllib.request
 from http.cookiejar import CookieJar
+
+def urlencode(text):
+	""" Encode text for use on a URL bar.
+			@param text: The text to encode
+	"""
+	return urllib.parse.quote_plus(text)
 
 def max_len(text, max):
 	""" Return a string capped at a specific length.
