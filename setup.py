@@ -1,9 +1,10 @@
 from setuptools import setup
+import connix
 
 setup(
   name = 'connix',
   packages = ['connix'],
-  version = '1.13',
+  version = connix.connix.__VERSION__,
   description = 'Connix is a general purpose Python 3.x library that contains a lot of commonly done operations inside of a single package.',
   author = 'Patrick Lambert',
   license = 'MIT',
