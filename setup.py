@@ -9,7 +9,7 @@ setup(
   author = 'Patrick Lambert',
   license = 'MIT',
   author_email = 'dendory@live.ca',
-  url = 'https://github.com/dendory/connix', 
+  url = 'https://connix.ca', 
   download_url = 'https://github.com/dendory/connix/archive/master.zip',
   keywords = ['connix', 'util'],
   classifiers = [],

@@ -3,7 +3,7 @@
     (C) 2017 Patrick Lambert - http://dendory.net - Provided under the MIT License
 """
 
-__VERSION__ = "1.13b"
+__VERSION__ = "1.14"
 
 import re
 import os
@@ -354,7 +354,6 @@ def list_files(folder, pattern="*"):
 		for filename in fnmatch.filter(filenames, pattern):
 			matches.append(os.path.join(root, filename))
 	return matches
-
 
 
 
