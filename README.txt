@@ -5,7 +5,7 @@ NAME
 
 DESCRIPTION
     Connix is a general purpose Python 3.x library that contains a lot of commonly done operations inside of a single package.
-    (C) 2017 Patrick Lambert - http://dendory.net - Provided under the MIT License
+    (C) 2018 Patrick Lambert - http://dendory.net - Provided under the MIT License
 
 FUNCTIONS
     alphanum(text, symbols=False, spaces=False)
@@ -115,6 +115,10 @@ FUNCTIONS
         Load a JSON file.
         @param filename: The filename to load from
     
+    logger(file)
+        Return a logger with sensible defaults.
+        @param file: Filename where to log
+    
     max_len(text, max)
         Return a string capped at a specific length.
         @param text: The text to return
@@ -155,7 +159,7 @@ FUNCTIONS
         @param text: The text to encode
 
 DATA
-    __VERSION__ = '1.14'
+    __VERSION__ = '1.15'
 
 FILE
     /home/elfguy/git/connix/connix/connix.py

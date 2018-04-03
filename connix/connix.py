@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """ Connix is a general purpose Python 3.x library that contains a lot of commonly done operations inside of a single package.
-    (C) 2017 Patrick Lambert - http://dendory.net - Provided under the MIT License
+    (C) 2018 Patrick Lambert - http://dendory.net - Provided under the MIT License
 """
 
-__VERSION__ = "1.14"
+__VERSION__ = "1.15"
 
 import re
 import os
@@ -19,10 +19,19 @@ import random
 import fnmatch
 import hashlib
 import smtplib
+import logging
+import inspect
 import datetime
 import urllib.parse
 import urllib.request
 from http.cookiejar import CookieJar
+
+def logger(file):
+	""" Return a logger with sensible defaults.
+			@param file: Filename where to log
+	"""
+	logging.basicConfig(filename = file, level = logging.INFO, format = "{} - %(levelname)s - %(asctime)s - %(message)s".format(inspect.getframeinfo(inspect.getouterframes(inspect.currentframe())[1][0])[0]))
+	return logging.getLogger()
 
 def urlencode(text):
 	""" Encode text for use on a URL bar.
