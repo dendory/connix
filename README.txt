@@ -159,7 +159,7 @@ FUNCTIONS
         @param text: The text to encode
 
 DATA
-    __VERSION__ = '1.15'
+    __VERSION__ = '1.16'
 
 FILE
     /home/elfguy/git/connix/connix/connix.py
