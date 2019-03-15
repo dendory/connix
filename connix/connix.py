@@ -183,7 +183,7 @@ def load(filename):
 	""" Load a JSON file.
 			@param filename: The filename to load from
 	"""
-	with open(filename, 'r') as fd:
+	with open(filename, 'r', encoding='UTF-8') as fd:
 		data = fd.read()
 	return json.loads(data)
 
@@ -192,7 +192,7 @@ def save(filename, data):
 			@param filename: The filename to use
 			@param data: The object to save
 	"""
-	with open(filename, 'w') as fd:
+	with open(filename, 'w', encoding='UTF-8') as fd:
 		fd.write(json.dumps(data, sort_keys = False, indent = 4))
 
 def unixtime():
@@ -217,7 +217,7 @@ def hashfile(filename):
 	"""
 	BLOCKSIZE = 65536
 	hasher = hashlib.sha256()
-	with open(filename, "rb") as fd:
+	with open(filename, "rb", encoding='UTF-8') as fd:
 		buf = fd.read(BLOCKSIZE)
 		while len(buf) > 0:
 			hasher.update(buf)
