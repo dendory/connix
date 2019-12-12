@@ -211,6 +211,15 @@ def now():
 	"""
 	return time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime())
 
+def days_since(timestamp):
+	""" Return number of days since a specific UTC time and date.
+			@param timestamp: A time in 'YYYY-MM-DD HH:MM:SS' format
+	"""
+	x = datetime.datetime.strptime(a, "%Y-%m-%d %H:%M:%S")
+	y = datetime.datetime.now()
+	z = y - x
+	return z.days
+
 def hashfile(filename):
 	""" Return a unique hash for the content of a file.
 			@param filename: The file to hash

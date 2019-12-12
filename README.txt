@@ -41,6 +41,10 @@ FUNCTIONS
         @param encoding: The decoding format (optional, defaults to UTF-8)
         @param cookie: The cookie string in format key1=value1;key2=value2 (optional)
     
+    days_since(timestamp)
+        Return number of days since a specific UTC time and date.
+        @param timestamp: A time in 'YYYY-MM-DD HH:MM:SS' format
+    
     decrypt(key, text)
         Return the plain text version of an encrypted string.
         @param key: The key used for the encryption
