@@ -3,7 +3,7 @@
     (C) 2018-2019 Patrick Lambert - http://dendory.net - Provided under the MIT License
 """
 
-__VERSION__ = "1.17"
+__VERSION__ = "1.18"
 
 import re
 import os
@@ -215,7 +215,7 @@ def days_since(timestamp):
 	""" Return number of days since a specific UTC time and date.
 			@param timestamp: A time in 'YYYY-MM-DD HH:MM:SS' format
 	"""
-	x = datetime.datetime.strptime(a, "%Y-%m-%d %H:%M:%S")
+	x = datetime.datetime.strptime(timestamp, "%Y-%m-%d %H:%M:%S")
 	y = datetime.datetime.now()
 	z = y - x
 	return z.days
