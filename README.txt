@@ -5,7 +5,7 @@ NAME
 
 DESCRIPTION
     Connix is a general purpose Python 3.x library that contains a lot of commonly done operations inside of a single package.
-    (C) 2018 Patrick Lambert - http://dendory.net - Provided under the MIT License
+    (C) 2018-2019 Patrick Lambert - http://dendory.net - Provided under the MIT License
 
 FUNCTIONS
     alphanum(text, symbols=False, spaces=False)
@@ -163,7 +163,7 @@ FUNCTIONS
         @param text: The text to encode
 
 DATA
-    __VERSION__ = '1.16'
+    __VERSION__ = '1.17'
 
 FILE
     /home/elfguy/git/connix/connix/connix.py
