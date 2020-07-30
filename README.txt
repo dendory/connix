@@ -5,7 +5,7 @@ NAME
 
 DESCRIPTION
     Connix is a general purpose Python 3.x library that contains a lot of commonly done operations inside of a single package.
-    (C) 2018-2019 Patrick Lambert - http://dendory.net - Provided under the MIT License
+    (C) 2018-2020 Patrick Lambert - http://dendory.net - Provided under the MIT License
 
 FUNCTIONS
     alphanum(text, symbols=False, spaces=False)
@@ -147,6 +147,9 @@ FUNCTIONS
         @param filename: The filename to use
         @param data: The object to save
     
+    syslog()
+        Return a handle for syslog with sensible defaults.
+    
     underline(text)
         Return the text in underline (Linux console only).
         @param text: The text to underline
@@ -163,9 +166,9 @@ FUNCTIONS
         @param text: The text to encode
 
 DATA
-    __VERSION__ = '1.18'
+    __VERSION__ = '1.19'
 
 FILE
-    /home/elfguy/git/connix/connix/connix.py
+    /home/ec2-user/git/connix/connix/connix.py
 
 
