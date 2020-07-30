@@ -166,7 +166,7 @@ FUNCTIONS
         @param text: The text to encode
 
 DATA
-    __VERSION__ = '1.19'
+    __VERSION__ = '1.20'
 
 FILE
     /home/ec2-user/git/connix/connix/connix.py

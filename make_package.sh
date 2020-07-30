@@ -1,6 +1,6 @@
 #!/bin/bash
 python3 -c "import connix;help(connix.connix)" > README.txt
-python3 setup.py sdist
+python3 setup.py sdist bdist_wheel
 twine upload dist/*
 rm -rf dist
 git add *
