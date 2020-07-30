@@ -7,5 +7,3 @@ git add *
 git commit -m "updates"
 git push
 sudo pip3 install connix --upgrade
-cp -f connix/connix.py ~/git/scripts/
-sudo cp README.txt /var/www/dendory/connix/README.txt
