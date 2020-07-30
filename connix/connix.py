@@ -3,7 +3,7 @@
     (C) 2018-2020 Patrick Lambert - http://dendory.net - Provided under the MIT License
 """
 
-__VERSION__ = "1.20"
+__VERSION__ = "1.21"
 
 import re
 import os
@@ -27,10 +27,11 @@ import urllib.parse
 import urllib.request
 from http.cookiejar import CookieJar
 
-def syslog():
+def syslog(logname):
 	""" Return a handle for syslog with sensible defaults.
+			@param logname: The name to use in syslog
 	"""
-	log = logging.getLogger(os.path.basename(__file__))
+	log = logging.getLogger(logname)
 	log.setLevel(logging.DEBUG)
 	handler = logging.handlers.SysLogHandler(address = '/dev/log')
 	handler.setFormatter(logging.Formatter('%(name)s: [%(levelname)s] %(message)s'))

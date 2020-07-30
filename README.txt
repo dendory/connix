@@ -147,8 +147,9 @@ FUNCTIONS
         @param filename: The filename to use
         @param data: The object to save
     
-    syslog()
+    syslog(logname)
         Return a handle for syslog with sensible defaults.
+        @param logname: The name to use in syslog
     
     underline(text)
         Return the text in underline (Linux console only).
@@ -166,7 +167,7 @@ FUNCTIONS
         @param text: The text to encode
 
 DATA
-    __VERSION__ = '1.20'
+    __VERSION__ = '1.21'
 
 FILE
     /home/ec2-user/git/connix/connix/connix.py
