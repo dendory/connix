@@ -3,12 +3,16 @@
     (C) 2018-2023 Patrick Lambert - http://dendory.net - Provided under the MIT License
 """
 
-__VERSION__ = "1.23"
+__VERSION__ = "1.24"
 
 import re
 import os
 import sys
-import cgi
+# Deprecated modules in Python 3.13
+if sys.version_info < (3, 13):
+	import cgi
+else:
+	cgi = None
 import time
 import uuid
 import json
