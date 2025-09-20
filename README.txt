@@ -5,7 +5,7 @@ NAME
 
 DESCRIPTION
     Connix is a general purpose Python 3.x library that contains a lot of commonly done operations inside of a single package.
-    (C) 2018-2023 Patrick Lambert - http://dendory.net - Provided under the MIT License
+    (C) 2018-2025 Patrick Lambert - http://dendory.net - Provided under the MIT License
 
 FUNCTIONS
     alphanum(text, symbols=False, spaces=False)
@@ -71,7 +71,7 @@ FUNCTIONS
         Return the error message after an exception. Must be used in an 'except' statement.
     
     form()
-        Return the GET and POST variables in a CGI application.
+        Return the GET and POST variables in a CGI application. (DEPRECATED)
     
     guid(length=16)
         Return a unique ID based on the machine, current time in milliseconds, and random number.
@@ -132,7 +132,7 @@ FUNCTIONS
         Return the current UTC date and time in a standard format.
     
     remote_ip()
-        Return the remote IP of a CGI application.
+        Return the remote IP of a CGI application. (DEPRECATED)
     
     remove_spaces(text)
         Remove extra spaces from a string.
@@ -165,10 +165,15 @@ FUNCTIONS
     urlencode(text)
         Encode text for use on a URL bar.
         @param text: The text to encode
+    
+    vault(app, secret)
+        Returns a secret from an Hashicorp Vault instance. Requires a config file
+        in JSON format at ~/.vault containing: role, endpoint, key
+                @param app: Application name
+                @param secret: Secret name
 
 DATA
-    __VERSION__ = '1.24'
-    __warningregistry__ = {'version': 0}
+    __VERSION__ = '1.27'
 
 FILE
     /home/s24/git/connix/connix/connix.py

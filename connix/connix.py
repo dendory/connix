@@ -1,18 +1,13 @@
 #!/usr/bin/env python3
 """ Connix is a general purpose Python 3.x library that contains a lot of commonly done operations inside of a single package.
-    (C) 2018-2023 Patrick Lambert - http://dendory.net - Provided under the MIT License
+    (C) 2018-2025 Patrick Lambert - http://dendory.net - Provided under the MIT License
 """
 
-__VERSION__ = "1.24"
+__VERSION__ = "1.27"
 
 import re
 import os
 import sys
-# Deprecated modules in Python 3.13
-if sys.version_info < (3, 13):
-	import cgi
-else:
-	cgi = None
 import time
 import uuid
 import json
@@ -257,15 +252,17 @@ def hash(text):
 	return str(hasher.hexdigest()).upper()
 
 def remote_ip():
-	""" Return the remote IP of a CGI application.
+	""" Return the remote IP of a CGI application. (DEPRECATED)
 	"""
+	import cgi
 	if "REMOTE_ADDR" in os.environ:
 		return str(cgi.escape(os.environ['REMOTE_ADDR']))
 	return ""
 
 def form():
-	""" Return the GET and POST variables in a CGI application.
+	""" Return the GET and POST variables in a CGI application. (DEPRECATED)
 	"""
+	import cgi
 	import cgitb
 	cgitb.enable(context=1)
 	result = {}
@@ -388,6 +385,43 @@ def list_files(folder, pattern="*"):
 		for filename in fnmatch.filter(filenames, pattern):
 			matches.append(os.path.join(root, filename))
 	return matches
+
+def vault(app, secret):
+	""" Returns a secret from an Hashicorp Vault instance. Requires a config file
+		in JSON format at ~/.vault containing: role, endpoint, key
+			@param app: Application name
+			@param secret: Secret name
+	"""
+	with open(os.path.expanduser("~/.vault"), 'r') as fd:
+		vaultcfg = json.loads(fd.read())
+	data = {
+		'role_id': vaultcfg['role'],
+		'secret_id': vaultcfg['key']
+	}
+	headers = {
+		'Content-Type': "application/json"
+	}
+	req = urllib.request.Request("https://{}/v1/auth/approle/login".format(vaultcfg['endpoint']),
+		data=str(json.dumps(data)).encode('utf-8'),
+		headers=headers,
+		method="POST"
+	)
+	resp = urllib.request.urlopen(req)
+	token = json.loads(resp.read().decode('utf-8'))['auth']['client_token']
+	headers = {
+		'Content-Type': "application/json",
+		'X-Vault-Token': token
+	}
+	try:
+		req = urllib.request.Request("https://{}/v1/kv/data/{}".format(vaultcfg['endpoint'], app),
+			headers=headers,
+			method="GET"
+		)
+		resp = urllib.request.urlopen(req)
+		result = json.loads(resp.read().decode('utf-8'))['data']['data'][secret]
+	except:
+		result = "null"
+	return result
 
 
 
